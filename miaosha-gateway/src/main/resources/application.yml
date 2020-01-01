@@ -1,0 +1,12 @@
+server:
+  port: 8820
+  servlet:
+    context-path: /credit-auth
+spring:
+  application:
+    name: miaosha_gateway
+  security:
+    user:
+      name: admin
+      password: 123456
+
