@@ -19,4 +19,6 @@ public interface UserService {
      * @return
      */
     UserInfoVO login(String mobile, String password, String mobileCode);
+
+    Integer register(String mobile,String password,String mobileCode);
 }

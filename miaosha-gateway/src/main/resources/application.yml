@@ -4,9 +4,5 @@ server:
     context-path: /credit-auth
 spring:
   application:
-    name: miaosha_gateway
-  security:
-    user:
-      name: admin
-      password: 123456
+    name: miaosha-gateway
 

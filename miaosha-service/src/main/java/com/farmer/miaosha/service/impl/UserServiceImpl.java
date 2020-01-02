@@ -26,4 +26,9 @@ public class UserServiceImpl implements UserService {
 
         return null;
     }
+
+    @Override
+    public Integer register(String mobile, String password, String mobileCode) {
+        return null;
+    }
 }

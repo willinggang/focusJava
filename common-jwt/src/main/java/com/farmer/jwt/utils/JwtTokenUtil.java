@@ -1,5 +1,6 @@
-package com.farmer.miaoshagateway.utils;
+package com.farmer.jwt.utils;
 
+import com.auth0.jwt.JWT;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -7,6 +8,9 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.stereotype.Component;
 
+import javax.crypto.spec.SecretKeySpec;
+import java.awt.*;
+import java.security.Key;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -22,9 +26,17 @@ import java.util.Map;
 public class JwtTokenUtil {
     private static final String CLAIM_KEY_USERNAME = "sub";
     private static final String CLAIM_KEY_CREATED = "created";
+    /**
+     * 秘钥
+     */
+    private String secret = "5JWwyak7NzsXgL9YYc0GJDBDoTu00sd60p73FCX9InLMLFM068";
+    /**
+     * 超时时长
+     */
+    private long expiration = 30L;
 
-    private String secret;
-    private long expiration;
+    Key key = new SecretKeySpec(secret.getBytes(), SignatureAlgorithm.HS512.getJcaName());
+
 
     /**
      * @param claims
@@ -36,7 +48,7 @@ public class JwtTokenUtil {
         return Jwts.builder()
                 .setClaims(claims)
                 .setExpiration(generateExpirationDate())
-                .signWith(SignatureAlgorithm.HS512, secret)
+                .signWith(key,SignatureAlgorithm.HS512)
                 .compact();
     }
 
