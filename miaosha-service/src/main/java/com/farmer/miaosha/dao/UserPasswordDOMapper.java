@@ -22,12 +22,15 @@ public interface UserPasswordDOMapper {
      *
      * @param userId   用户ID
      * @param password 密码
+     * @return
      */
     int updateByUserId(@Param("userId") String userId, @Param("password") String password);
 
     /**
      * 查询用户密码
+     *
      * @param userId 用户ID
+     * @return
      */
     UserPasswordDO selectByUserId(String userId);
 }
