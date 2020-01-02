@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="" />
+    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jwt/common-jwt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jwt/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jwt/src/main/java/com/farmer/jwt/FarmerJwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-jwt/src/main/java/com/farmer/jwt/utils/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/utils/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/utils/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +29,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1VVoZiAQPW1ZCKlyMU7ZDBsVOQL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -30,16 +50,20 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="E:/孙治纲/聚焦Java/资料/dianshangmiaosha/第二章.秒杀回顾/miaoshaStable" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="last_opened_file_path" value="F:/work/dev/mid-autumn" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.farmer.jwt.utils" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IdeaProject\FocusingJava\miaosha-service\src\main\java\com\farmer\miaosha\config" />
       <recent name="E:\IdeaProject\FocusingJava\miaosha-service\src\main\resources" />
@@ -86,6 +110,7 @@
       <workItem from="1577347682211" duration="31846000" />
       <workItem from="1577704899473" duration="217000" />
       <workItem from="1577705157408" duration="9221000" />
+      <workItem from="1577929307768" duration="4135000" />
     </task>
     <servers />
   </component>
@@ -101,11 +126,12 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577800353992" />
-    <state x="493" y="163" key="FileChooserDialogImpl" timestamp="1577705387955">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="740" y="252" key="FileChooserDialogImpl" timestamp="1577935066338">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577623096121" />
     <state x="493" y="163" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1577705387955" />
+    <state x="740" y="252" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1577935066338" />
     <state width="1237" height="102" key="GridCell.Tab.0.bottom" timestamp="1577704882534">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -170,21 +196,24 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1577418542613" />
-    <state x="2716" y="200" key="SettingsEditor" timestamp="1577800142096">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="796" y="197" key="SettingsEditor" timestamp="1577929639764">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2716" y="200" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577800142096" />
     <state x="242" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577705421899" />
-    <state x="1962" y="54" key="new project wizard" timestamp="1577798520537">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="796" y="197" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1577929639764" />
+    <state x="42" y="55" key="new project wizard" timestamp="1577934845356">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1962" y="54" key="new project wizard/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577798520537" />
     <state x="28" y="35" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1577347916793" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1577671149655">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="42" y="55" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1577934845356" />
+    <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup" timestamp="1577933323604">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577628337470" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1577671149655" />
+    <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1577933323604" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

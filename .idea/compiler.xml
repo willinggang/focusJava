@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="miaosha-service" />
+        <module name="common-jwt" />
         <module name="miaosha-gateway" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-jwt" options="-parameters" />
       <module name="miaosha-gateway" options="-parameters" />
       <module name="miaosha-service" options="-parameters" />
     </option>
