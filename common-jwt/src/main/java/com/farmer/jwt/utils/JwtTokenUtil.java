@@ -1,5 +1,6 @@
 package com.farmer.jwt.utils;
 
+import com.auth0.jwt.JWT;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

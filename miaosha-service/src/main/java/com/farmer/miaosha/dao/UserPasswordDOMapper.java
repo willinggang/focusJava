@@ -2,20 +2,32 @@ package com.farmer.miaosha.dao;
 
 import com.farmer.miaosha.DO.UserPasswordDO;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 @Mapper
 @Repository
 public interface UserPasswordDOMapper {
-    int deleteByPrimaryKey(Integer id);
 
+    /**
+     * 注册插入账号密码
+     *
+     * @param record 账号密码记录
+     * @return
+     */
     int insert(UserPasswordDO record);
 
-    int insertSelective(UserPasswordDO record);
+    /**
+     * 根据用户ID更新密码
+     *
+     * @param userId   用户ID
+     * @param password 密码
+     */
+    int updateByUserId(@Param("userId") String userId, @Param("password") String password);
 
-    UserPasswordDO selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(UserPasswordDO record);
-
-    int updateByPrimaryKey(UserPasswordDO record);
+    /**
+     * 查询用户密码
+     * @param userId 用户ID
+     */
+    UserPasswordDO selectByUserId(String userId);
 }

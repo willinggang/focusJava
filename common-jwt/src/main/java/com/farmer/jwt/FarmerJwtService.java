@@ -1,5 +1,7 @@
 package com.farmer.jwt;
 
+import com.auth0.jwt.JWTVerifier;
+import com.auth0.jwt.algorithms.Algorithm;
 import com.farmer.jwt.utils.JwtTokenUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -38,4 +40,5 @@ public class FarmerJwtService {
         log.info("用户:{}生成的Token为{}", userId, token);
         return token;
     }
+
 }
