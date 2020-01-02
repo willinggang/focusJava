@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jwt/common-jwt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jwt/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jwt/src/main/java/com/farmer/jwt/FarmerJwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common-jwt/src/main/java/com/farmer/jwt/utils/JwtTokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/utils/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/utils/JwtTokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/component/RestfulAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/component/RestfulAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/utils/JwtTokenUtil.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,11 +102,24 @@
       <workItem from="1577704899473" duration="217000" />
       <workItem from="1577705157408" duration="9221000" />
       <workItem from="1577929307768" duration="4135000" />
+      <workItem from="1577936440658" duration="259000" />
     </task>
+    <task id="LOCAL-00001" summary="将token的生成与校验提出">
+      <created>1577936571114</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577936571114</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="将token的生成与校验提出" />
+    <option name="LAST_COMMIT_MESSAGE" value="将token的生成与校验提出" />
   </component>
   <component name="WindowStateProjectService">
     <state x="390" y="210" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1577704879958">
@@ -126,6 +130,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577800353992" />
+    <state x="465" y="116" key="CommitChangelistDialog2" timestamp="1577936570616">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1577936570616" />
     <state x="740" y="252" key="FileChooserDialogImpl" timestamp="1577935066338">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

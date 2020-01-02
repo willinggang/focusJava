@@ -15,7 +15,6 @@ import java.io.IOException;
  * @author: FarmerSun
  * @create: 2019-12-31 22:56
  */
-@Component
 public class RestfulAccessDeniedHandler implements AccessDeniedHandler {
     @Override
     public void handle(HttpServletRequest request,
