@@ -8,6 +8,7 @@ public interface UserInfoDOMapper {
      * 插入用户信息
      *
      * @param record 用户信息
+     * @return
      */
     int insert(UserInfoDO record);
 
@@ -15,6 +16,7 @@ public interface UserInfoDOMapper {
      * 根据手机号码获取用户信息
      *
      * @param mobile 手机号码
+     * @return
      */
     UserInfoDO selectByTelephone(String mobile);
 
@@ -22,11 +24,14 @@ public interface UserInfoDOMapper {
      * 更新用户信息
      *
      * @param record 用户信息
+     * @return
      */
     int updateById(UserInfoDO record);
 
     /**
      * 查询手机号码是否存在
+     * @param mobile 手机号
+     * @return
      */
-    int selectTelephoneCount(UserInfoDO record);
+    int selectTelephoneCount(String mobile);
 }
