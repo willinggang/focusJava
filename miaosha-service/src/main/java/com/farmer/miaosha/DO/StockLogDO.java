@@ -1,5 +1,15 @@
 package com.farmer.miaosha.DO;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * @author Administrator
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class StockLogDO {
     private String stockLogId;
 
@@ -9,35 +19,4 @@ public class StockLogDO {
 
     private Integer status;
 
-    public String getStockLogId() {
-        return stockLogId;
-    }
-
-    public void setStockLogId(String stockLogId) {
-        this.stockLogId = stockLogId == null ? null : stockLogId.trim();
-    }
-
-    public Integer getItemId() {
-        return itemId;
-    }
-
-    public void setItemId(Integer itemId) {
-        this.itemId = itemId;
-    }
-
-    public Integer getAmount() {
-        return amount;
-    }
-
-    public void setAmount(Integer amount) {
-        this.amount = amount;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
 }

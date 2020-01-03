@@ -1,5 +1,15 @@
 package com.farmer.miaosha.DO;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * @author Administrator
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class SequenceInfoDO {
     private String name;
 
@@ -7,27 +17,4 @@ public class SequenceInfoDO {
 
     private Integer step;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
-    }
-
-    public Integer getCurrentValue() {
-        return currentValue;
-    }
-
-    public void setCurrentValue(Integer currentValue) {
-        this.currentValue = currentValue;
-    }
-
-    public Integer getStep() {
-        return step;
-    }
-
-    public void setStep(Integer step) {
-        this.step = step;
-    }
 }
