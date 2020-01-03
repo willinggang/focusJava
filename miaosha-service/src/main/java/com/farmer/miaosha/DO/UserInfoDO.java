@@ -1,8 +1,10 @@
 package com.farmer.miaosha.DO;
 
+import com.farmer.miaosha.service.model.UserInfoModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.BeanUtils;
 
 /**
  * @author Administrator
@@ -24,5 +26,11 @@ public class UserInfoDO {
     private String registerMode;
 
     private String thirdPartyId;
+
+    public UserInfoModel getUserInfoModel() {
+        UserInfoModel model = new UserInfoModel();
+        BeanUtils.copyProperties(this, model);
+        return model;
+    }
 
 }
