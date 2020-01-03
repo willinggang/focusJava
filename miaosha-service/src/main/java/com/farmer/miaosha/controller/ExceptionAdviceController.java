@@ -1,15 +1,12 @@
 package com.farmer.miaosha.controller;
 
+import com.farmer.common.exception.CustomException;
 import com.farmer.miaosha.common.CommonResponse;
 import lombok.extern.slf4j.Slf4j;
 
-import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.converter.HttpMessageNotReadableException;
-import org.springframework.validation.ObjectError;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.ServletRequestBindingException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -17,16 +14,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
-import org.springframework.web.servlet.NoHandlerFoundException;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.ConstraintValidatorContext;
-import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
 
 /**
  * 接口参数校验控制类
@@ -80,16 +70,6 @@ public class ExceptionAdviceController {
         logError(exception);
         return CommonResponse.SERVLET_REQUEST_BINDING_ERROR;
     }
-/*
-    *//**
-     * 404错误
-     *//*
-    @ExceptionHandler(NoHandlerFoundException.class)
-    protected CommonResponse requestBindingException(NoHandlerFoundException exception) {
-        logError(exception);
-        return CommonResponse.NO_HANDLER_FOUND_ERROR;
-    }*/
-
 
     /**
      * @param exception 异常
@@ -100,6 +80,17 @@ public class ExceptionAdviceController {
     protected CommonResponse missingServletRequestParameter(MissingServletRequestParameterException exception) {
         logError(exception);
         return CommonResponse.METHOD_PARAM_MISSING_ERROR;
+    }
+
+    /**
+     * @param exception 异常
+     * @Description 其他异常
+     * @date 2019/12/19
+     */
+    @ExceptionHandler(CustomException.class)
+    protected CommonResponse customException(CustomException exception) {
+        logError(exception);
+        return CommonResponse.fail(exception.getCode(),exception.getMessage());
     }
 
     /**

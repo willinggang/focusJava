@@ -1,7 +1,14 @@
 package com.farmer.miaosha.dao;
 
 import com.farmer.miaosha.DO.UserInfoDO;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
+/**
+ * @author Administrator
+ */
+@Mapper
+@Repository
 public interface UserInfoDOMapper {
 
     /**

@@ -1,6 +1,7 @@
 package com.farmer.miaosha.service.impl;
 
 import com.farmer.miaosha.service.CaffeineCacheService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
@@ -74,6 +75,17 @@ public class CaffeineCacheServiceImpl implements CaffeineCacheService {
         Cache cache = caffeineCacheManager.getCache(cacheName);
         if (cache != null) {
             cache.put(key, value);
+        }
+    }
+
+    @Override
+    public void evict(String cacheName, Object key) {
+        if (key == null){
+            return;
+        }
+        Cache cache = caffeineCacheManager.getCache(StringUtils.isEmpty(cacheName)?DEFAULT_CACHE:cacheName);
+        if (cache != null) {
+            cache.evictIfPresent(key);
         }
     }
 }

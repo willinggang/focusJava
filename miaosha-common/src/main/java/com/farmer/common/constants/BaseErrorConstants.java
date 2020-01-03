@@ -12,4 +12,8 @@ public interface BaseErrorConstants {
      * 用户信息错误编码起始
      */
     Integer USER_ERROR_BASE_CODE = -10000;
+    /**
+     * 验证码错误代码起始
+     */
+    Integer MOBILE_CODE_BASE_CODE = -20000;
 }
