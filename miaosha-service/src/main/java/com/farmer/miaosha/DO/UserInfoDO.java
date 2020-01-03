@@ -1,5 +1,17 @@
 package com.farmer.miaosha.DO;
 
+import com.farmer.miaosha.service.model.UserInfoModel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.BeanUtils;
+
+/**
+ * @author Administrator
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserInfoDO {
     private Integer id;
 
@@ -15,59 +27,10 @@ public class UserInfoDO {
 
     private String thirdPartyId;
 
-    public Integer getId() {
-        return id;
+    public UserInfoModel getUserInfoModel() {
+        UserInfoModel model = new UserInfoModel();
+        BeanUtils.copyProperties(this, model);
+        return model;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
-    }
-
-    public Byte getGender() {
-        return gender;
-    }
-
-    public void setGender(Byte gender) {
-        this.gender = gender;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
-    public String getTelphone() {
-        return telphone;
-    }
-
-    public void setTelphone(String telphone) {
-        this.telphone = telphone == null ? null : telphone.trim();
-    }
-
-    public String getRegisterMode() {
-        return registerMode;
-    }
-
-    public void setRegisterMode(String registerMode) {
-        this.registerMode = registerMode == null ? null : registerMode.trim();
-    }
-
-    public String getThirdPartyId() {
-        return thirdPartyId;
-    }
-
-    public void setThirdPartyId(String thirdPartyId) {
-        this.thirdPartyId = thirdPartyId == null ? null : thirdPartyId.trim();
-    }
 }

@@ -1,6 +1,7 @@
 package com.farmer.miaosha.service.impl;
 
 import com.farmer.miaosha.VO.UserInfoVO;
+import com.farmer.miaosha.dao.UserInfoDOMapper;
 import com.farmer.miaosha.dao.UserPasswordDOMapper;
 import com.farmer.miaosha.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -20,6 +21,8 @@ public class UserServiceImpl implements UserService {
 
     @Resource
     private UserPasswordDOMapper userPasswordDao;
+    @Resource
+    private UserInfoDOMapper userInfoDOMapper;
 
     @Override
     public UserInfoVO login(String mobile, String password, String mobileCode) {

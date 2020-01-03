@@ -1,5 +1,6 @@
 package com.farmer.miaosha.controller;
 
+import com.farmer.common.exception.MobileCodeEnum;
 import com.farmer.miaosha.common.CommonResponse;
 import com.farmer.miaosha.service.SmsService;
 import com.farmer.miaosha.validation.MobileValidation;
@@ -24,13 +25,13 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("sms")
 public class SmsController {
-//
-//    @Resource
-//    private SmsService smsService;
-//
-//    @ApiOperation("发送验证码")
-//    @PostMapping("code/send")
-//    public CommonResponse sendMobileCode(@RequestParam("mobile") @ApiParam("手机号码") @MobileValidation String mobile) {
-//        return smsService.sendCode(mobile,0)>0?CommonResponse.success("发送成功"):CommonResponse.fail("发送失败");
-//    }
+
+    @Resource
+    private SmsService smsService;
+
+    @ApiOperation("发送验证码")
+    @PostMapping("code/send")
+    public CommonResponse sendMobileCode(@RequestParam("mobile") @ApiParam("手机号码") @MobileValidation String mobile) {
+        return smsService.sendCode(mobile, MobileCodeEnum.CODE_LOGIN.getType())>0?CommonResponse.success("发送成功"):CommonResponse.fail("发送失败");
+    }
 }
