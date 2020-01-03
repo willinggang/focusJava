@@ -24,13 +24,13 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("sms")
 public class SmsController {
-
-    @Resource
-    private SmsService smsService;
-
-    @ApiOperation("发送验证码")
-    @PostMapping("code/send")
-    public CommonResponse sendMobileCode(@RequestParam("mobile") @ApiParam("手机号码") @MobileValidation String mobile) {
-        return smsService.sendCode(mobile,0)>0?CommonResponse.success("发送成功"):CommonResponse.fail("发送失败");
-    }
+//
+//    @Resource
+//    private SmsService smsService;
+//
+//    @ApiOperation("发送验证码")
+//    @PostMapping("code/send")
+//    public CommonResponse sendMobileCode(@RequestParam("mobile") @ApiParam("手机号码") @MobileValidation String mobile) {
+//        return smsService.sendCode(mobile,0)>0?CommonResponse.success("发送成功"):CommonResponse.fail("发送失败");
+//    }
 }
