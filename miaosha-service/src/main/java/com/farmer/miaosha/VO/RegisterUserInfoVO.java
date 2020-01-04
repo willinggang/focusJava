@@ -1,10 +1,8 @@
 package com.farmer.miaosha.VO;
 
+import com.farmer.miaosha.validation.MobileValidation;
 import io.swagger.annotations.ApiModelProperty;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.validator.constraints.Length;
 
 /**
@@ -37,6 +35,7 @@ public class RegisterUserInfoVO {
      * 手机号码
      */
     @ApiModelProperty("手机号码")
+    @MobileValidation
     private String telphone;
 
     /**
@@ -50,4 +49,10 @@ public class RegisterUserInfoVO {
      */
     @ApiModelProperty("密码")
     private String password;
+
+    /**
+     * 第三方账号ID
+     */
+    @ApiModelProperty("第三方账号ID")
+    private String thirdPartyId;
 }

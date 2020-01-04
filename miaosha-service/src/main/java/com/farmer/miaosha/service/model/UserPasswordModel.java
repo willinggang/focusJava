@@ -1,7 +1,10 @@
 package com.farmer.miaosha.service.model;
 
 import com.farmer.miaosha.DO.UserPasswordDO;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.BeanUtils;
 
 /**
@@ -11,6 +14,9 @@ import org.springframework.beans.BeanUtils;
  * @create: 2020-01-02 17:37
  */
 @Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserPasswordModel {
     private Integer id;
 

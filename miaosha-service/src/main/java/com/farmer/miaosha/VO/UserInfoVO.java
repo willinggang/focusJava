@@ -35,4 +35,8 @@ public class UserInfoVO {
      * 手机号码
      */
     private String telphone;
+    /**
+     * token
+     */
+    private String token;
 }

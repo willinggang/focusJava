@@ -3,6 +3,7 @@ package com.farmer.miaosha.service.model;
 import com.farmer.miaosha.DO.UserInfoDO;
 import com.farmer.miaosha.VO.UserInfoVO;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.BeanUtils;
@@ -14,6 +15,7 @@ import org.springframework.beans.BeanUtils;
  * @create: 2020-01-03 16:08
  */
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserInfoModel {

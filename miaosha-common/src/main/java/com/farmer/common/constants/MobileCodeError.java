@@ -34,7 +34,7 @@ public interface MobileCodeError extends BaseErrorConstants {
     /**
      * 验证码失效
      */
-    Integer CODE_TIME_OUT_ERROR_CODE = MOBILE_CODE_BASE_CODE - 5;
-    String CODE_TIME_OUT_ERROR_MSG = "验证码失效";
+    Integer CODE_NOT_EXITS_ERROR_CODE = MOBILE_CODE_BASE_CODE - 5;
+    String CODE_NOT_EXITS_ERROR_MSG = "验证码不存在";
 
 }

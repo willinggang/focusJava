@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/RegisterUserInfoVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/TokenGeneratorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/MobileCodeError.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/MobileCodeError.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/UserErrorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/UserErrorConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/RegisterUserInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/RegisterUserInfoVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/UserInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/UserInfoVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/UserPasswordDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/UserPasswordDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/UserInfoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/UserInfoModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/UserPasswordModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/UserPasswordModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/UserInfoDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/UserInfoDOMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/UserPasswordDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/UserPasswordDOMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +130,7 @@
       <workItem from="1578055272191" duration="8438000" />
       <workItem from="1578100498055" duration="913000" />
       <workItem from="1578117343304" duration="1963000" />
-      <workItem from="1578119330707" duration="2966000" />
+      <workItem from="1578119330707" duration="9641000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -170,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578060959175</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加部分注册代码">
+      <created>1578122316405</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578122316405</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +207,8 @@
     <MESSAGE value="Merge branch 'master' of https://gitee.com/farmersun/FocusingJava&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;.idea/workspace.xml&#10;Mybaits生成DO" />
     <MESSAGE value="合并数据" />
     <MESSAGE value="添加验证码验证码接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加验证码验证码接口" />
+    <MESSAGE value="添加部分注册代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加部分注册代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2505" y="321" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1578056314805">
@@ -204,15 +216,15 @@
     </state>
     <state x="2505" y="321" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578056314805" />
     <state x="390" y="210" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680@0.0.1280.680" timestamp="1577704879957" />
-    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1578060496607">
+    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1578122931668">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578060496607" />
+    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578122931668" />
     <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1577955627833" />
-    <state x="2385" y="109" key="CommitChangelistDialog2" timestamp="1578060957774">
+    <state x="2385" y="109" key="CommitChangelistDialog2" timestamp="1578122314832">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2385" y="109" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578060957774" />
+    <state x="2385" y="109" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578122314832" />
     <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1577956981990" />
     <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1577972418928">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -294,10 +306,10 @@
     <state x="2716" y="200" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578119308838" />
     <state x="242" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577705421899" />
     <state x="796" y="197" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1577929639764" />
-    <state x="2472" y="255" key="Vcs.Push.Dialog.v2" timestamp="1577974578563">
+    <state x="2472" y="255" key="Vcs.Push.Dialog.v2" timestamp="1578122346741">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2472" y="255" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577974578563" />
+    <state x="2472" y="255" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578122346741" />
     <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1577956994884" />
     <state x="2603" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1578055467062">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -323,10 +335,10 @@
     <state x="1962" y="54" key="new project wizard/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577798520537" />
     <state x="28" y="35" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1577347916793" />
     <state x="42" y="55" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1577954229870" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578120661819">
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578122922866">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578120661819" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578122922866" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1577671149655" />
     <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1577958300097" />
   </component>
