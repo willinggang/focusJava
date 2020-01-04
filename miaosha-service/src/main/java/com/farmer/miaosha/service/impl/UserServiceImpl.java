@@ -19,6 +19,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import sun.misc.BASE64Encoder;
 
 import javax.annotation.Resource;
@@ -42,11 +43,8 @@ public class UserServiceImpl implements UserService {
     @Resource
     private UserInfoDOMapper userInfoDao;
 
-    @Resource
-
-
     @Override
-    public UserInfoVO login(String mobile, String password, String mobileCode) throws NoSuchAlgorithmException {
+    public UserInfoVO login(String mobile, String password, String mobileCode) throws NoSuchAlgorithmException, UnsupportedEncodingException {
         UserInfoVO userInfoVO = null;
         /*同时传账号密码和短信验证码返回接口错误*/
         if (StringUtils.isNotEmpty(password) && StringUtils.isNotEmpty(mobileCode)) {
@@ -62,6 +60,7 @@ public class UserServiceImpl implements UserService {
         return userInfoVO;
     }
 
+    @Transactional
     @Override
     public UserInfoVO register(RegisterUserInfoVO register) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         String telphone = register.getTelphone();
@@ -87,13 +86,14 @@ public class UserServiceImpl implements UserService {
                 .telphone(register.getTelphone())
                 .registerMode("byphone")
                 .build();
-        Integer generateUserId = userInfoDao.insert(userInfoModel.getUserInfoDO());
+        UserInfoDO infoDO = userInfoModel.getUserInfoDO();
+        Integer generateUserId = userInfoDao.insert(infoDO);
         /*插入用户数据失败*/
-        if (generateUserId <= 0) {
+        if (generateUserId == 0 || infoDO.getId() == null || infoDO.getId() == 0) {
             throw new CustomException(UserErrorConstants.REGISTER_ERROR_CODE, UserErrorConstants.REGISTER_ERROR_MSG);
         }
         UserPasswordModel userPasswordModel = UserPasswordModel.builder()
-                .userId(generateUserId)
+                .userId(infoDO.getId())
                 .encrptPassword(encodeByMd5(register.getPassword()))
                 .build();
         int insertPasswordRet = userPasswordDao.insert(userPasswordModel.getUserPasswordDO());
@@ -139,7 +139,7 @@ public class UserServiceImpl implements UserService {
      * @Description 账号密码登录
      * @date 2020/1/4
      */
-    private UserInfoVO passwordLogin(String mobile, String password) {
+    private UserInfoVO passwordLogin(String mobile, String password) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         UserInfoDO userInfoDO = userInfoDao.selectByTelephone(mobile);
         if (userInfoDO == null) {
             throw new CustomException(UserErrorConstants.MOBILE_NO_EXITS_ERROR_CODE, UserErrorConstants.MOBILE_NO_EXITS_ERROR_MSG);
@@ -151,7 +151,7 @@ public class UserServiceImpl implements UserService {
             throw new CustomException(UserErrorConstants.PASSWORD_NOT_EXITS_ERROR_CODE, UserErrorConstants.PASSWORD_NOT_EXITS_ERROR_MSG);
         }
         UserPasswordModel passwordModel = passwordDO.getUserPasswordModel();
-        if (password.equals(passwordModel.getEncrptPassword())) {
+        if (encodeByMd5(password).equals(passwordModel.getEncrptPassword())) {
             return userModel.getUserInfoVO();
         } else {
             throw new CustomException(UserErrorConstants.AUTHENTICATION_PASSWORD_ERROR_CODE, UserErrorConstants.AUTHENTICATION_PASSWORD_ERROR_MSG);

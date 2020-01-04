@@ -46,7 +46,7 @@ public class UserController {
         try {
             UserInfoVO infoVO = userService.login(mobile, password, mobileCode);
             return CommonResponse.success(infoVO);
-        } catch (NoSuchAlgorithmException e) {
+        } catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
             log.error("登录接口错误:{}", ExceptionUtils.getStackTrace(e));
         }
         return CommonResponse.fail("系统错误登录失败");

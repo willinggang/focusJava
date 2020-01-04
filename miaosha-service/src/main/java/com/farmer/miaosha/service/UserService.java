@@ -22,7 +22,7 @@ public interface UserService {
      * @param mobileCode 验证码
      * @return
      */
-    UserInfoVO login(String mobile, String password, String mobileCode) throws NoSuchAlgorithmException;
+    UserInfoVO login(String mobile, String password, String mobileCode) throws NoSuchAlgorithmException, UnsupportedEncodingException;
 
     /**
      * 用户注册

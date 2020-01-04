@@ -27,6 +27,9 @@
     where telphone = #{telphone,jdbcType=VARCHAR}
   </select>
   <insert id="insert" parameterType="com.farmer.miaosha.DO.UserInfoDO" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+  <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id">
+    select LAST_INSERT_ID()
+  </selectKey>
     insert into user_info (name, gender,
       age, telphone, register_mode, 
       third_party_id)
