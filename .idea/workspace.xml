@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="合并数据">
-      <change afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/MobileCodeError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/exception/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/exception/MobileCodeException.java" afterDir="false" />
+    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/RegisterUserInfoVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/BaseErrorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/BaseErrorConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/exception/UserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/exception/UserException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ExceptionAdviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ExceptionAdviceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/SmsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/UserInfoDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/UserInfoDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/CaffeineCacheService.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/CaffeineCacheService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/CaffeineCacheServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/CaffeineCacheServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/SmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/SmsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/validation/validator/MobileValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/validation/validator/MobileValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/MobileCodeError.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/MobileCodeError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/UserErrorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/UserErrorConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/UserInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/UserInfoVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/UserPasswordDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/UserPasswordDOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/UserInfoModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/UserInfoModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/UserPasswordDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/UserPasswordDOMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +123,10 @@
       <workItem from="1577936440658" duration="9387000" />
       <workItem from="1577969970149" duration="700000" />
       <workItem from="1577970700095" duration="3908000" />
-      <workItem from="1578055272191" duration="5661000" />
+      <workItem from="1578055272191" duration="8438000" />
+      <workItem from="1578100498055" duration="913000" />
+      <workItem from="1578117343304" duration="1963000" />
+      <workItem from="1578119330707" duration="2966000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -165,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578055508935</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加验证码验证码接口">
+      <created>1578060959175</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578060959175</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +195,8 @@
     <MESSAGE value="修改公共常量和账号密码操作" />
     <MESSAGE value="Merge branch 'master' of https://gitee.com/farmersun/FocusingJava&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;.idea/workspace.xml&#10;Mybaits生成DO" />
     <MESSAGE value="合并数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="合并数据" />
+    <MESSAGE value="添加验证码验证码接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加验证码验证码接口" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2505" y="321" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1578056314805">
@@ -203,10 +209,10 @@
     </state>
     <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578060496607" />
     <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1577955627833" />
-    <state x="2385" y="109" key="CommitChangelistDialog2" timestamp="1578060862968">
+    <state x="2385" y="109" key="CommitChangelistDialog2" timestamp="1578060957774">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2385" y="109" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578060862968" />
+    <state x="2385" y="109" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578060957774" />
     <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1577956981990" />
     <state x="2660" y="275" key="FileChooserDialogImpl" timestamp="1577972418928">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -282,10 +288,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2589" y="235" key="MultipleFileMergeDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578055530450" />
-    <state x="2716" y="200" key="SettingsEditor" timestamp="1578056284274">
+    <state x="2716" y="200" key="SettingsEditor" timestamp="1578119308838">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2716" y="200" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578056284274" />
+    <state x="2716" y="200" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578119308838" />
     <state x="242" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577705421899" />
     <state x="796" y="197" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1577929639764" />
     <state x="2472" y="255" key="Vcs.Push.Dialog.v2" timestamp="1577974578563">
@@ -297,10 +303,12 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2603" y="254" key="VcsDiffUtil.ChangesDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578055467062" />
-    <state x="2560" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1577970701572">
+    <state x="2560" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1578119335354">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2560" y="344" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577970701572" />
+    <state x="427" y="225" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1578117344838" />
+    <state x="2560" y="344" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578119335354" />
+    <state x="427" y="225" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1578100499822" />
     <state x="2556" y="127" width="647" height="786" key="find.popup" timestamp="1577971095710">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -315,10 +323,10 @@
     <state x="1962" y="54" key="new project wizard/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577798520537" />
     <state x="28" y="35" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1577347916793" />
     <state x="42" y="55" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1577954229870" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578059364750">
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578120661819">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578059364750" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1578120661819" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1577671149655" />
     <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1577958300097" />
   </component>

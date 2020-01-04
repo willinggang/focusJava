@@ -30,4 +30,11 @@ public interface UserErrorConstants extends BaseErrorConstants {
      */
     Integer AUTHENTICATION_PASSWORD_ERROR_CODE = USER_ERROR_BASE_CODE - 4;
     String AUTHENTICATION_PASSWORD_ERROR_MSG = "账号或密码错误";
+
+
+    /**
+     * 账号密码错误
+     */
+    Integer PASSWORD_NOT_EXITS_ERROR_CODE = USER_ERROR_BASE_CODE - 5;
+    String PASSWORD_NOT_EXITS_ERROR_MSG = "密码不存在请使用验证码登录";
 }

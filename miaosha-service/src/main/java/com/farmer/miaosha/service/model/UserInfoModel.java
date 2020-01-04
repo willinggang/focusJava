@@ -1,6 +1,7 @@
 package com.farmer.miaosha.service.model;
 
 import com.farmer.miaosha.DO.UserInfoDO;
+import com.farmer.miaosha.VO.UserInfoVO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -48,5 +49,12 @@ public class UserInfoModel {
         UserInfoDO infoDO = new UserInfoDO();
         BeanUtils.copyProperties(this, infoDO);
         return infoDO;
+    }
+
+    /**转换ViewObject*/
+    public UserInfoVO getUserInfoVO() {
+        UserInfoVO infoVO = new UserInfoVO();
+        BeanUtils.copyProperties(this, infoVO);
+        return infoVO;
     }
 }

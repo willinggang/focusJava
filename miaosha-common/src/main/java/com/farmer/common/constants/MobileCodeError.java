@@ -31,4 +31,10 @@ public interface MobileCodeError extends BaseErrorConstants {
     Integer CODE_SEND_FREQUENT_ERROR_CODE = MOBILE_CODE_BASE_CODE - 4;
     String CODE_SEND_FREQUENT_ERROR_MSG = "验证码发送过于频繁，请稍后再试";
 
+    /**
+     * 验证码失效
+     */
+    Integer CODE_TIME_OUT_ERROR_CODE = MOBILE_CODE_BASE_CODE - 5;
+    String CODE_TIME_OUT_ERROR_MSG = "验证码失效";
+
 }
