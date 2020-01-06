@@ -13,7 +13,7 @@
   <sql id="Base_Column_List">
     id, user_id, item_id, item_price, amount, order_price, promo_id
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectByOderId" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from order_info
@@ -31,56 +31,7 @@
       #{itemPrice,jdbcType=DOUBLE}, #{amount,jdbcType=INTEGER}, #{orderPrice,jdbcType=DOUBLE}, 
       #{promoId,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.farmer.miaosha.DO.OrderInfoDO">
-    insert into order_info
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        id,
-      </if>
-      <if test="userId != null">
-        user_id,
-      </if>
-      <if test="itemId != null">
-        item_id,
-      </if>
-      <if test="itemPrice != null">
-        item_price,
-      </if>
-      <if test="amount != null">
-        amount,
-      </if>
-      <if test="orderPrice != null">
-        order_price,
-      </if>
-      <if test="promoId != null">
-        promo_id,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="id != null">
-        #{id,jdbcType=VARCHAR},
-      </if>
-      <if test="userId != null">
-        #{userId,jdbcType=INTEGER},
-      </if>
-      <if test="itemId != null">
-        #{itemId,jdbcType=INTEGER},
-      </if>
-      <if test="itemPrice != null">
-        #{itemPrice,jdbcType=DOUBLE},
-      </if>
-      <if test="amount != null">
-        #{amount,jdbcType=INTEGER},
-      </if>
-      <if test="orderPrice != null">
-        #{orderPrice,jdbcType=DOUBLE},
-      </if>
-      <if test="promoId != null">
-        #{promoId,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.farmer.miaosha.DO.OrderInfoDO">
+  <update id="updateByOrderId" parameterType="com.farmer.miaosha.DO.OrderInfoDO">
     update order_info
     <set>
       <if test="userId != null">
@@ -104,14 +55,12 @@
     </set>
     where id = #{id,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.farmer.miaosha.DO.OrderInfoDO">
-    update order_info
-    set user_id = #{userId,jdbcType=INTEGER},
-      item_id = #{itemId,jdbcType=INTEGER},
-      item_price = #{itemPrice,jdbcType=DOUBLE},
-      amount = #{amount,jdbcType=INTEGER},
-      order_price = #{orderPrice,jdbcType=DOUBLE},
-      promo_id = #{promoId,jdbcType=INTEGER}
-    where id = #{id,jdbcType=VARCHAR}
-  </update>
+
+  <select id="selectOrdersByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from order_info
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+
 </mapper>
