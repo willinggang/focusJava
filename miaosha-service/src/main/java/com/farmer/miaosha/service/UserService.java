@@ -1,6 +1,10 @@
 package com.farmer.miaosha.service;
 
+import com.farmer.miaosha.VO.RegisterUserInfoVO;
 import com.farmer.miaosha.VO.UserInfoVO;
+
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
 
 /**
  * 用户信息服务
@@ -18,7 +22,13 @@ public interface UserService {
      * @param mobileCode 验证码
      * @return
      */
-    UserInfoVO login(String mobile, String password, String mobileCode);
+    UserInfoVO login(String mobile, String password, String mobileCode) throws NoSuchAlgorithmException, UnsupportedEncodingException;
 
-    Integer register(String mobile,String password,String mobileCode);
+    /**
+     * 用户注册
+     *
+     * @param register 注册信息
+     * @return
+     */
+    UserInfoVO register(RegisterUserInfoVO register) throws UnsupportedEncodingException, NoSuchAlgorithmException;
 }

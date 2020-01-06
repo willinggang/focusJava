@@ -10,6 +10,7 @@ public interface CaffeineCacheService {
 
     /**
      * 获取key对应value
+     *
      * @param key
      * @return
      */
@@ -17,6 +18,7 @@ public interface CaffeineCacheService {
 
     /**
      * 获取key对应value
+     *
      * @param key
      * @param cacheName 缓存名称
      * @return
@@ -25,6 +27,7 @@ public interface CaffeineCacheService {
 
     /**
      * 获取key对应value
+     *
      * @param key
      * @param value 缓存值
      * @return
@@ -33,10 +36,20 @@ public interface CaffeineCacheService {
 
     /**
      * 获取key对应value
+     *
      * @param key
      * @param cacheName 缓存名称
-     * @param value 缓存值
+     * @param value     缓存值
      * @return
      */
     public void putValue(String cacheName, Object key, Object value);
+
+    /**
+     * 删除键值key
+     *
+     * @param cacheName 缓存名称
+     * @param key       key值
+     * @return
+     */
+    public void evict(String cacheName, Object key);
 }

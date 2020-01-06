@@ -13,6 +13,30 @@ import lombok.NoArgsConstructor;
  */
 @Data
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserInfoVO {
 
+    private Integer id;
+    /**
+     * 姓名
+     */
+    private String name;
+
+    /**
+     * 性别
+     */
+    private Byte gender;
+    /**
+     * 年龄
+     */
+    private Integer age;
+    /**
+     * 手机号码
+     */
+    private String telphone;
+    /**
+     * token
+     */
+    private String token;
 }

@@ -18,12 +18,11 @@ import java.util.regex.Pattern;
 
 @Component
 public class MobileValidator implements ConstraintValidator<MobileValidation, String> {
-    private static final String MOBILE_REGX = "/^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$";
+    private static final String MOBILE_REGX = "^[1](([3][0-9])|([4][5-9])|([5][0-3,5-9])|([6][5,6])|([7][0-8])|([8][0-9])|([9][1,8,9]))[0-9]{8}$";
 
     @Override
     public boolean isValid(String mobile, ConstraintValidatorContext constraintValidatorContext) {
         if (StringUtils.isNotEmpty(mobile)) {
-
             return Pattern.matches(MOBILE_REGX, mobile);
         }
         return false;
