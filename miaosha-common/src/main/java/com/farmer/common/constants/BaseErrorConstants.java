@@ -16,4 +16,8 @@ public interface BaseErrorConstants {
      * 验证码错误代码起始
      */
     Integer MOBILE_CODE_BASE_CODE = -20000;
+    /**
+     * 商品错误代码
+     */
+    Integer ITEM_ERROR_BASE_CODE = -30000;
 }
