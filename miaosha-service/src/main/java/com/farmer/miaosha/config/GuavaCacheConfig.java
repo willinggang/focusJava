@@ -18,10 +18,8 @@ import java.util.concurrent.TimeUnit;
  * @create: 2020-01-03 17:46
  */
 
-@Configuration
-@EnableCaching
 public class GuavaCacheConfig {
-    @Bean
+    /*@Bean
     public CacheManager cacheManager() {
         CaffeineCacheManager cacheManager = new CaffeineCacheManager();
         cacheManager.setCaffeine(
@@ -30,5 +28,5 @@ public class GuavaCacheConfig {
                         maximumSize(1000)
                         .initialCapacity(10));
         return cacheManager;
-    }
+    }*/
 }
