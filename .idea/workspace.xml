@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="合并">
-      <change afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/ItemErrorConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/ItemVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/ItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/ItemModel.java" afterDir="false" />
+    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/config/FastJsonRedisSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/config/RedisConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/BaseErrorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/BaseErrorConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/DO/ItemDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/DO/ItemDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/ItemDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/ItemDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/OrderInfoDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/OrderInfoDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/ItemDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/ItemDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/OrderInfoDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/OrderInfoDOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +20,8 @@
         <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,6 +50,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="MyBatisLogPluginparameters" value="Parameters:" />
+    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
+    <property name="MyBatisLogPluginrunning" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -127,7 +123,7 @@
       <workItem from="1578018377542" duration="80000" />
       <workItem from="1578038421836" duration="6030000" />
       <workItem from="1578275210229" duration="6823000" />
-      <workItem from="1578290892229" duration="3697000" />
+      <workItem from="1578290892229" duration="9162000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -192,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578275271430</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="商品服务">
+      <created>1578295871950</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578295871950</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +223,8 @@
     <MESSAGE value="修改用户信息表DAO" />
     <MESSAGE value="添加本地缓存" />
     <MESSAGE value="合并" />
-    <option name="LAST_COMMIT_MESSAGE" value="合并" />
+    <MESSAGE value="商品服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品服务" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#Notifications" timestamp="1578040754260">
@@ -231,19 +235,19 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="390" y="210" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680@0.0.1280.680" timestamp="1577704879957" />
-    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1578294125230">
+    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1578365024003">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577800353992" />
-    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578294125230" />
+    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578365024003" />
     <state x="640" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578018300337">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578018300337" />
-    <state x="465" y="116" key="CommitChangelistDialog2" timestamp="1578281422725">
+    <state x="465" y="116" key="CommitChangelistDialog2" timestamp="1578295871486">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578281422725" />
+    <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578295871486" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1578015710605">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -254,26 +258,30 @@
     <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577623096121" />
     <state x="493" y="163" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1577705387955" />
     <state x="740" y="252" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1578015987566" />
-    <state width="1237" height="102" key="GridCell.Tab.0.bottom" timestamp="1577704882534">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1876" height="280" key="GridCell.Tab.0.bottom" timestamp="1578296073358">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
     <state width="1237" height="102" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1577704882534" />
-    <state width="1237" height="102" key="GridCell.Tab.0.center" timestamp="1577704882534">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1876" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578296073358" />
+    <state width="1876" height="280" key="GridCell.Tab.0.center" timestamp="1578296073358">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
     <state width="1237" height="102" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1577704882534" />
-    <state width="1237" height="102" key="GridCell.Tab.0.left" timestamp="1577704882533">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1876" height="280" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578296073358" />
+    <state width="1876" height="280" key="GridCell.Tab.0.left" timestamp="1578296073358">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
     <state width="1237" height="102" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1577704882533" />
-    <state width="1237" height="102" key="GridCell.Tab.0.right" timestamp="1577704882534">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1876" height="280" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578296073358" />
+    <state width="1876" height="280" key="GridCell.Tab.0.right" timestamp="1578296073358">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
     <state width="1237" height="102" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1577704882534" />
+    <state width="1876" height="280" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578296073358" />
     <state width="1237" height="102" key="GridCell.Tab.1.bottom" timestamp="1577704882534">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -328,10 +336,10 @@
     <state x="2716" y="200" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577800142096" />
     <state x="242" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577705421899" />
     <state x="796" y="197" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578015992035" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1578046486180">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1578305110146">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1578046486180" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1578305110146" />
     <state x="714" y="258" key="VcsDiffUtil.ChangesDialog" timestamp="1578015588889">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -354,12 +362,12 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="165" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578040178178" />
-    <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup" timestamp="1578294877290">
+    <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup" timestamp="1578362059332">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577628337470" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1577671149655" />
-    <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578294877290" />
+    <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578362059332" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
