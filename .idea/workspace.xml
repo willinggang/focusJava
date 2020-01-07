@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/OrderVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/config/GuavaCacheConfig.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="spring" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -101,6 +103,10 @@
       </list>
     </option>
   </component>
+  <component name="SpringGeneralSettings">
+    <option name="showMultipleContextsPanel" value="false" />
+    <option name="showProfilesPanel" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -119,7 +125,7 @@
       <workItem from="1578018377542" duration="80000" />
       <workItem from="1578038421836" duration="6030000" />
       <workItem from="1578275210229" duration="6823000" />
-      <workItem from="1578290892229" duration="11393000" />
+      <workItem from="1578290892229" duration="16925000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -205,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578377762586</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="添加不上传配置">
+      <created>1578377984260</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1578377984260</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +249,8 @@
     <MESSAGE value="商品服务" />
     <MESSAGE value="添加Redis配置" />
     <MESSAGE value="添加cache的部分配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加cache的部分配置" />
+    <MESSAGE value="添加不上传配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加不上传配置" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#Notifications" timestamp="1578040754260">
@@ -256,10 +270,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578018300337" />
-    <state x="465" y="116" key="CommitChangelistDialog2" timestamp="1578377761988">
+    <state x="465" y="116" key="CommitChangelistDialog2" timestamp="1578377983961">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578377761988" />
+    <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578377983961" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1578015710605">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -342,16 +356,16 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="669" y="239" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578377804686" />
-    <state x="796" y="197" key="SettingsEditor" timestamp="1578015992035">
+    <state x="796" y="197" key="SettingsEditor" timestamp="1578378473909">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2716" y="200" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577800142096" />
     <state x="242" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577705421899" />
-    <state x="796" y="197" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578015992035" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1578365900349">
+    <state x="796" y="197" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578378473909" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1578377999802">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1578365900349" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1578377999802" />
     <state x="714" y="258" key="VcsDiffUtil.ChangesDialog" timestamp="1578015588889">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -368,6 +382,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="657" y="315" key="git4idea.merge.GitPullDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578377789934" />
+    <state x="721" y="365" key="git4idea.ui.GitTagDialog" timestamp="1578378073134">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="721" y="365" key="git4idea.ui.GitTagDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578378073134" />
     <state x="42" y="55" key="new project wizard" timestamp="1577954229870">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
