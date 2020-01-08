@@ -1,6 +1,7 @@
 package com.farmer.miaosha.dao;
 
 import com.farmer.miaosha.DO.ItemStockDO;
+import org.apache.ibatis.annotations.Param;
 
 public interface ItemStockDOMapper {
     /**
@@ -15,8 +16,9 @@ public interface ItemStockDOMapper {
      * 根据商品ID进行减库存操作
      *
      * @param itemId 商品ID
+     * @param amount 数量
      * @return
      */
-    int decreaseStockByItemId(Integer itemId);
+    int decreaseStockByItemId(@Param("itemId") Integer itemId, @Param("amount") Integer amount);
 
 }

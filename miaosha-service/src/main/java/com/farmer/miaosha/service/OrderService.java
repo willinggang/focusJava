@@ -11,8 +11,12 @@ import com.farmer.miaosha.VO.OrderVO;
 public interface OrderService {
     /**
      * 创建订单
-     * @param userId 用户ID
-     * @param itemId 商品ID
+     *
+     * @param userId  用户ID
+     * @param itemId  商品ID
+     * @param amount  数量
+     * @param promoId 秒杀活动ID
+     * @return
      */
-    OrderVO createOrder(Integer userId, Integer itemId);
+    OrderVO createOrder(Integer userId, Integer itemId, Integer amount, Integer promoId);
 }

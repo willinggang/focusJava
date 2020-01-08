@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/OrderModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/ItemVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/ItemVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/ItemErrorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/ItemErrorConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/ItemStockDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/ItemStockDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/PromoDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/PromoDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/ItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/ItemModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/ItemModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/ItemStockDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/ItemStockDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/PromoDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/PromoDOMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +128,7 @@
       <workItem from="1578018377542" duration="80000" />
       <workItem from="1578038421836" duration="6030000" />
       <workItem from="1578275210229" duration="6823000" />
-      <workItem from="1578290892229" duration="21078000" />
+      <workItem from="1578290892229" duration="24953000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -229,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578390742059</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="商品详情添加库存和秒杀详情">
+      <created>1578449572820</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1578449572820</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +268,8 @@
     <MESSAGE value="添加cache的部分配置" />
     <MESSAGE value="添加不上传配置" />
     <MESSAGE value="添加订单服务" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加订单服务" />
+    <MESSAGE value="商品详情添加库存和秒杀详情" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品详情添加库存和秒杀详情" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#Notifications" timestamp="1578040754260">
@@ -273,19 +280,19 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="390" y="210" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680@0.0.1280.680" timestamp="1577704879957" />
-    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1578365024003">
+    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1578450326636">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577800353992" />
-    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578365024003" />
+    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578450326636" />
     <state x="640" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578018300337">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578018300337" />
-    <state x="465" y="116" key="CommitChangelistDialog2" timestamp="1578390741701">
+    <state x="465" y="116" key="CommitChangelistDialog2" timestamp="1578449572365">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578390741701" />
+    <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578449572365" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1578015710605">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -408,12 +415,12 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="701" y="165" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578040178178" />
-    <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup" timestamp="1578448941204">
+    <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup" timestamp="1578451355463">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577628337470" />
     <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1577671149655" />
-    <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578448941204" />
+    <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578451355463" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

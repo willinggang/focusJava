@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.farmer.miaosha.dao.ItemStockDOMapper">
-  <resultMap id="BaseResultMap" type="com.farmer.miaosha.DO.ItemStockDO">
-    <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="stock" jdbcType="INTEGER" property="stock" />
-    <result column="item_id" jdbcType="INTEGER" property="itemId" />
-  </resultMap>
-  <sql id="Base_Column_List">
+    <resultMap id="BaseResultMap" type="com.farmer.miaosha.DO.ItemStockDO">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="stock" jdbcType="INTEGER" property="stock"/>
+        <result column="item_id" jdbcType="INTEGER" property="itemId"/>
+    </resultMap>
+    <sql id="Base_Column_List">
     id, stock, item_id
   </sql>
-  <select id="selectByItemId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from item_stock
-    where item_id = #{itemId,jdbcType=INTEGER}
-  </select>
-  <update id="decreaseStockByItemId" parameterType="java.lang.Integer" >
+    <select id="selectByItemId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from item_stock
+        where item_id = #{itemId,jdbcType=INTEGER}
+    </select>
+    <update id="decreaseStockByItemId">
     update  item_stock
-    set stock = stock - 1
+    set stock = stock - #{amount}
     where item_id = #{itemId,jdbcType=INTEGER}
   </update>
 </mapper>
