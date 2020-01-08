@@ -3,11 +3,14 @@ package com.farmer.miaosha.service.model;
 import ch.qos.logback.core.joran.util.beans.BeanUtil;
 import com.farmer.miaosha.DO.ItemDO;
 import com.farmer.miaosha.VO.ItemVO;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.BeanUtils;
+
+import java.util.Date;
 
 /**
  * @program: FocusingJava
@@ -33,6 +36,27 @@ public class ItemModel {
     private String imgUrl;
 
     /**
+     * 库存
+     */
+    private Integer stock;
+    /**
+     * 秒杀活动名称
+     */
+    private String promoName;
+    /**
+     * 秒杀开始时间
+     */
+    private Date startDate;
+    /**
+     * 秒杀活动价格
+     */
+    private Double promoItemPrice;
+    /**
+     * 秒杀活动结束时间
+     */
+    private Date endDate;
+
+    /**
      * 转换VO
      */
     public ItemVO getItemVO() {
@@ -41,12 +65,4 @@ public class ItemModel {
         return vo;
     }
 
-    /**
-     * 转换DO
-     */
-    public ItemDO getItemDO() {
-        ItemDO itemDO = new ItemDO();
-        BeanUtils.copyProperties(this, itemDO);
-        return itemDO;
-    }
 }
