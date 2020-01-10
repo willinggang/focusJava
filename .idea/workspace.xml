@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/OrderErrorConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/BaseErrorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/BaseErrorConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/OrderVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/VO/OrderVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/SequenceInfoDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/SequenceInfoDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/OrderModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/model/OrderModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/SequenceInfoDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/mapper/SequenceInfoDOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/MiaoshaServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/MiaoshaServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +127,7 @@
       <workItem from="1578038421836" duration="6030000" />
       <workItem from="1578275210229" duration="6823000" />
       <workItem from="1578290892229" duration="30807000" />
-      <workItem from="1578624648180" duration="6370000" />
+      <workItem from="1578624648180" duration="12549000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -265,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578626135688</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="创建订单基本业务逻辑">
+      <created>1578638238627</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1578638238627</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +306,8 @@
     <MESSAGE value="添加部分订单逻辑内容" />
     <MESSAGE value="修改远程仓库" />
     <MESSAGE value="Merge branch 'master' of https://github.com/willinggang/focusJava&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/willinggang/focusJava&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;README.md" />
+    <MESSAGE value="创建订单基本业务逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建订单基本业务逻辑" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#Notifications" timestamp="1578040754260">
@@ -322,10 +327,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578018300337" />
-    <state x="465" y="116" key="CommitChangelistDialog2" timestamp="1578626135360">
+    <state x="465" y="116" key="CommitChangelistDialog2" timestamp="1578638238036">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578626135360" />
+    <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578638238036" />
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1578015710605">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -414,10 +419,10 @@
     <state x="2716" y="200" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577800142096" />
     <state x="242" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1577705421899" />
     <state x="796" y="197" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578378473909" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1578626159641">
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1578638244332">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1578626159641" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1578638244332" />
     <state x="714" y="258" key="VcsDiffUtil.ChangesDialog" timestamp="1578015588889">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -12,6 +12,12 @@ spring:
         max-active: 8
         max-idle: 2
         max-wait: -1
+  application:
+    name: miaosha-service
+  cloud:
+    nacos:
+      discovery:
+        ip: 192.168.1.105
 
 #  mvc:
 #    throw-exception-if-no-handler-found: true
