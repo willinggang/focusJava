@@ -1,8 +1,11 @@
 package com.farmer.miaosha.dao;
 
 import com.farmer.miaosha.DO.ItemStockDO;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-
+import org.springframework.stereotype.Repository;
+@Mapper
+@Repository
 public interface ItemStockDOMapper {
     /**
      * 根据ItemId获取库存信息

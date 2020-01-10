@@ -1,9 +1,13 @@
 package com.farmer.miaosha.dao;
 
 import com.farmer.miaosha.DO.OrderInfoDO;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Mapper
+@Repository
 public interface OrderInfoDOMapper {
     int deleteByPrimaryKey(String id);
 

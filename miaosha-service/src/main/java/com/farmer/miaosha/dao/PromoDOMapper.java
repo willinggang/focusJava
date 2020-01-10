@@ -1,7 +1,11 @@
 package com.farmer.miaosha.dao;
 
 import com.farmer.miaosha.DO.PromoDO;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
+@Mapper
+@Repository
 public interface PromoDOMapper {
 
     /**
