@@ -123,6 +123,7 @@
       <workItem from="1578038421836" duration="6030000" />
       <workItem from="1578275210229" duration="6823000" />
       <workItem from="1578290892229" duration="30807000" />
+      <workItem from="1578624648180" duration="804000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -236,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578453509558</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="修改远程仓库">
+      <created>1578624803107</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1578624803107</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +279,8 @@
     <MESSAGE value="添加订单服务" />
     <MESSAGE value="商品详情添加库存和秒杀详情" />
     <MESSAGE value="添加部分订单逻辑内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加部分订单逻辑内容" />
+    <MESSAGE value="修改远程仓库" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改远程仓库" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="182" key="#Notifications" timestamp="1578040754260">
@@ -395,10 +404,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="640" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578290893317" />
-    <state x="709" y="315" key="git4idea.merge.GitMergeDialog" timestamp="1578624816575">
+    <state x="709" y="315" key="git4idea.merge.GitMergeDialog" timestamp="1578625722150">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="709" y="315" key="git4idea.merge.GitMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578624816575" />
+    <state x="709" y="315" key="git4idea.merge.GitMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578625722150" />
     <state x="657" y="315" key="git4idea.merge.GitPullDialog" timestamp="1578377789934">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
