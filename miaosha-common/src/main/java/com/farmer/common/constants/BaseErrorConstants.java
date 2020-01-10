@@ -20,4 +20,9 @@ public interface BaseErrorConstants {
      * 商品错误代码
      */
     Integer ITEM_ERROR_BASE_CODE = -30000;
+
+    /**
+     * 订单错误常量
+     */
+    Integer ORDER_ERROR_BASE_CODE = -60000;
 }

@@ -1,22 +1,25 @@
 package com.farmer.miaosha.service.impl;
 
 import com.farmer.common.constants.ItemErrorConstants;
+import com.farmer.common.constants.OrderErrorConstants;
 import com.farmer.common.exception.CustomException;
 import com.farmer.miaosha.DO.ItemDO;
 import com.farmer.miaosha.DO.ItemStockDO;
 import com.farmer.miaosha.DO.PromoDO;
+import com.farmer.miaosha.DO.SequenceInfoDO;
 import com.farmer.miaosha.VO.OrderVO;
-import com.farmer.miaosha.dao.ItemDOMapper;
-import com.farmer.miaosha.dao.ItemStockDOMapper;
-import com.farmer.miaosha.dao.PromoDOMapper;
+import com.farmer.miaosha.dao.*;
 import com.farmer.miaosha.service.OrderService;
 import com.farmer.miaosha.service.model.OrderModel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.lang.annotation.Annotation;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 /**
@@ -35,6 +38,10 @@ public class OrderServiceImpl implements OrderService {
     private ItemStockDOMapper itemStockDOMapper;
     @Resource
     private PromoDOMapper promoDOMapper;
+    @Resource
+    private SequenceInfoDOMapper sequenceInfoDOMapper;
+    @Resource
+    private OrderInfoDOMapper orderInfoDOMapper;
 
     @Override
     @Transactional
@@ -74,8 +81,43 @@ public class OrderServiceImpl implements OrderService {
         if (promoDO != null && now.after(promoDO.getStartDate()) && now.before(promoDO.getEndDate())) {
             orderModel.setPromoId(promoDO.getId());
             orderModel.setOrderPrice(promoDO.getPromoItemPrice() > 0 ? itemDO.getPrice() - promoDO.getPromoItemPrice() : itemDO.getPrice());
+        } else {
+            orderModel.setOrderPrice(itemDO.getPrice());
         }
 
-        return null;
+        String orderNo = generateOrderNo();
+        orderModel.setId(orderNo);
+        int orderInsertRet = orderInfoDOMapper.insert(orderModel.getOrderInfoDO());
+        if (orderInsertRet == 0) {
+            throw new CustomException(OrderErrorConstants.ORDER_CREATE_ERROR_CODE, OrderErrorConstants.ORDER_CREATE_ERROR_MSG);
+        }
+        return orderModel.getOrderVO();
+    }
+
+
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public String generateOrderNo() {
+        //订单号有16位
+        StringBuilder stringBuilder = new StringBuilder();
+        //前8位为时间信息，年月日
+        LocalDateTime now = LocalDateTime.now();
+        String nowDate = now.format(DateTimeFormatter.ISO_DATE).replace("-", "");
+        stringBuilder.append(nowDate);
+
+        //中间6位为自增序列
+        //获取当前sequence
+        int sequence = 0;
+        SequenceInfoDO sequenceDO = sequenceInfoDOMapper.getSequenceByName("order_info");
+        sequence = sequenceDO.getCurrentValue();
+        sequenceDO.setCurrentValue(sequenceDO.getCurrentValue() + sequenceDO.getStep());
+        sequenceInfoDOMapper.updateByPrimaryKeySelective(sequenceDO);
+        String sequenceStr = String.valueOf(sequence);
+        for (int i = 0; i < 6 - sequenceStr.length(); i++) {
+            stringBuilder.append(0);
+        }
+        stringBuilder.append(sequenceStr);
+        //最后2位为分库分表位,暂时写死
+        stringBuilder.append("00");
+        return stringBuilder.toString();
     }
 }

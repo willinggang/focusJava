@@ -1,8 +1,11 @@
 package com.farmer.miaosha.service.model;
 
+import com.farmer.miaosha.DO.OrderInfoDO;
+import com.farmer.miaosha.VO.OrderVO;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.BeanUtils;
 
 /**
  * @program: FocusingJava
@@ -38,4 +41,16 @@ public class OrderModel {
      * 秒杀活动ID
      */
     private Integer promoId;
+
+    public OrderInfoDO getOrderInfoDO(){
+        OrderInfoDO infoDO = new OrderInfoDO();
+        BeanUtils.copyProperties(this,infoDO);
+        return infoDO;
+    }
+
+    public OrderVO getOrderVO(){
+        OrderVO orderVO = new OrderVO();
+        BeanUtils.copyProperties(this,orderVO);
+        return orderVO;
+    }
 }

@@ -9,47 +9,12 @@
   <sql id="Base_Column_List">
     name, current_value, step
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="getSequenceByName" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from sequence_info
     where name = #{name,jdbcType=VARCHAR}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
-    delete from sequence_info
-    where name = #{name,jdbcType=VARCHAR}
-  </delete>
-  <insert id="insert" parameterType="com.farmer.miaosha.DO.SequenceInfoDO">
-    insert into sequence_info (name, current_value, step
-      )
-    values (#{name,jdbcType=VARCHAR}, #{currentValue,jdbcType=INTEGER}, #{step,jdbcType=INTEGER}
-      )
-  </insert>
-  <insert id="insertSelective" parameterType="com.farmer.miaosha.DO.SequenceInfoDO">
-    insert into sequence_info
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="name != null">
-        name,
-      </if>
-      <if test="currentValue != null">
-        current_value,
-      </if>
-      <if test="step != null">
-        step,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="name != null">
-        #{name,jdbcType=VARCHAR},
-      </if>
-      <if test="currentValue != null">
-        #{currentValue,jdbcType=INTEGER},
-      </if>
-      <if test="step != null">
-        #{step,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.farmer.miaosha.DO.SequenceInfoDO">
     update sequence_info
     <set>
@@ -62,10 +27,5 @@
     </set>
     where name = #{name,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.farmer.miaosha.DO.SequenceInfoDO">
-    update sequence_info
-    set current_value = #{currentValue,jdbcType=INTEGER},
-      step = #{step,jdbcType=INTEGER}
-    where name = #{name,jdbcType=VARCHAR}
-  </update>
+
 </mapper>
