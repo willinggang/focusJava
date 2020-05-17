@@ -1,3 +1,4 @@
+/*
 package com.farmer.miaoshagateway.component;
 
 import org.springframework.security.access.AccessDeniedException;
@@ -9,12 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+*/
 /**
  * @program: FocusingJava
  * @description: 当访问接口没有权限时，自定义的返回结果
  * @author: FarmerSun
  * @create: 2019-12-31 22:56
- */
+ *//*
+
 public class RestfulAccessDeniedHandler implements AccessDeniedHandler {
     @Override
     public void handle(HttpServletRequest request,
@@ -26,3 +29,4 @@ public class RestfulAccessDeniedHandler implements AccessDeniedHandler {
         response.getWriter().flush();
     }
 }
+*/

@@ -2,13 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ConfigRefreshController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/ProductServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/com/farmer/product/ProductServiceApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/ItemStockDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/ItemStockDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/OrderInfoDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/OrderInfoDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/PromoDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/PromoDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/SequenceInfoDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/dao/SequenceInfoDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/MiaoshaGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/MiaoshaGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/component/RestAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/component/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/component/RestfulAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/component/RestfulAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/MiaoshaServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/MiaoshaServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +68,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -64,7 +84,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="F:/work/dev/mid-autumn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/product-service/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -79,7 +99,7 @@
       <recent name="E:\IdeaProject\FocusingJava\miaosha-service\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MiaoshaServiceApplication">
+  <component name="RunManager" selected="Spring Boot.MiaoshaGatewayApplication">
     <configuration name="MiaoshaGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="miaosha-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.farmer.miaoshagateway.MiaoshaGatewayApplication" />
@@ -94,18 +114,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="product-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.farmer.product.ProductServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpringGeneralSettings">
     <option name="showMultipleContextsPanel" value="false" />
@@ -131,7 +146,11 @@
       <workItem from="1578275210229" duration="6823000" />
       <workItem from="1578290892229" duration="30807000" />
       <workItem from="1578624648180" duration="6370000" />
-      <workItem from="1578640157549" duration="2123000" />
+      <workItem from="1578640157549" duration="3733000" />
+      <workItem from="1581383945650" duration="1214000" />
+      <workItem from="1581397913440" duration="639000" />
+      <workItem from="1581595255824" duration="10000" />
+      <workItem from="1589610525244" duration="22092000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -266,24 +285,30 @@
       <option name="project" value="LOCAL" />
       <updated>1578626135688</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="调整nacos实现服务的注册于发现">
+      <created>1578648716878</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1578648716878</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -303,163 +328,54 @@
     <MESSAGE value="添加部分订单逻辑内容" />
     <MESSAGE value="修改远程仓库" />
     <MESSAGE value="Merge branch 'master' of https://github.com/willinggang/focusJava&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/willinggang/focusJava&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;README.md" />
+    <MESSAGE value="调整nacos实现服务的注册于发现" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整nacos实现服务的注册于发现" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="182" key="#Notifications" timestamp="1578040754260">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589628560088">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="182" key="#Notifications/0.0.1920.1050@0.0.1920.1050" timestamp="1578040754260" />
-    <state x="390" y="210" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1577704879958">
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589628560088" />
+    <state width="1921" height="522" key="GridCell.Tab.0.bottom" timestamp="1589685625066">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="522" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
+    <state width="1921" height="522" key="GridCell.Tab.0.center" timestamp="1589685625066">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="522" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
+    <state width="1921" height="522" key="GridCell.Tab.0.left" timestamp="1589685625065">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="522" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625065" />
+    <state width="1921" height="522" key="GridCell.Tab.0.right" timestamp="1589685625066">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="522" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
+    <state width="1921" height="522" key="GridCell.Tab.1.bottom" timestamp="1589685625066">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="522" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
+    <state width="1921" height="522" key="GridCell.Tab.1.center" timestamp="1589685625066">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="522" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
+    <state width="1921" height="522" key="GridCell.Tab.1.left" timestamp="1589685625066">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="522" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
+    <state width="1921" height="522" key="GridCell.Tab.1.right" timestamp="1589685625066">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="522" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
+    <state x="242" y="0" key="SettingsEditor" timestamp="1581383961973">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="390" y="210" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1280.680@0.0.1280.680" timestamp="1577704879957" />
-    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1578450326636">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="242" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581383961973" />
+    <state x="2171" y="293" width="1251" height="606" key="new project wizard" timestamp="1589700440245">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2685" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577800353992" />
-    <state x="765" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1578450326636" />
-    <state x="640" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578018300337">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="640" y="259" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578018300337" />
-    <state x="465" y="116" key="CommitChangelistDialog2" timestamp="1578626135360">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="465" y="116" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578626135360" />
-    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog" timestamp="1578015710605">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578015710605" />
-    <state x="493" y="163" key="FileChooserDialogImpl" timestamp="1578640318277">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577623096121" />
-    <state x="493" y="163" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1578640318277" />
-    <state x="740" y="252" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1578015987566" />
-    <state width="1236" height="313" key="GridCell.Tab.0.bottom" timestamp="1578648426371">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
-    <state width="1236" height="313" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578648426371" />
-    <state width="1876" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578296073358" />
-    <state width="1236" height="313" key="GridCell.Tab.0.center" timestamp="1578648426371">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
-    <state width="1236" height="313" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1578648426371" />
-    <state width="1876" height="280" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578296073358" />
-    <state width="1236" height="313" key="GridCell.Tab.0.left" timestamp="1578648426370">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
-    <state width="1236" height="313" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1578648426370" />
-    <state width="1876" height="280" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578296073358" />
-    <state width="1236" height="313" key="GridCell.Tab.0.right" timestamp="1578648426371">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="261" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
-    <state width="1236" height="313" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1578648426371" />
-    <state width="1876" height="280" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578296073358" />
-    <state width="1236" height="313" key="GridCell.Tab.1.bottom" timestamp="1578648426371">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="261" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
-    <state width="1236" height="313" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578648426371" />
-    <state width="1236" height="313" key="GridCell.Tab.1.center" timestamp="1578648426371">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="261" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
-    <state width="1236" height="313" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1578648426371" />
-    <state width="1236" height="313" key="GridCell.Tab.1.left" timestamp="1578648426371">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="261" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
-    <state width="1236" height="313" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1578648426371" />
-    <state width="1236" height="313" key="GridCell.Tab.1.right" timestamp="1578648426371">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="261" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577629655028" />
-    <state width="1236" height="313" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1578648426371" />
-    <state width="1237" height="102" key="GridCell.Tab.2.bottom" timestamp="1577704882534">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="245" key="GridCell.Tab.2.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577628978615" />
-    <state width="1237" height="102" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1577704882534" />
-    <state width="1237" height="102" key="GridCell.Tab.2.center" timestamp="1577704882534">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="245" key="GridCell.Tab.2.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577628978615" />
-    <state width="1237" height="102" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1577704882534" />
-    <state width="1237" height="102" key="GridCell.Tab.2.left" timestamp="1577704882534">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="245" key="GridCell.Tab.2.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577628978614" />
-    <state width="1237" height="102" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1577704882534" />
-    <state width="1237" height="102" key="GridCell.Tab.2.right" timestamp="1577704882534">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1877" height="245" key="GridCell.Tab.2.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577628978615" />
-    <state width="1237" height="102" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1577704882534" />
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1577418542613">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1577418542613" />
-    <state x="446" y="112" key="MultipleFileMergeDialog" timestamp="1578647439662">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="446" y="112" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1578647439662" />
-    <state x="669" y="239" key="MultipleFileMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578377804686" />
-    <state x="242" y="0" key="SettingsEditor" timestamp="1578640325537">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="2716" y="200" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577800142096" />
-    <state x="242" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1578640325537" />
-    <state x="796" y="197" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578378473909" />
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1578626159641">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1578626159641" />
-    <state x="714" y="258" key="VcsDiffUtil.ChangesDialog" timestamp="1578015588889">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="714" y="258" key="VcsDiffUtil.ChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578015588889" />
-    <state x="640" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1578290893317">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="640" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578290893317" />
-    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578647427996">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="437" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1578647427996" />
-    <state x="709" y="315" key="git4idea.merge.GitMergeDialog" timestamp="1578626000401">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="709" y="315" key="git4idea.merge.GitMergeDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578626000401" />
-    <state x="657" y="315" key="git4idea.merge.GitPullDialog" timestamp="1578377789934">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="657" y="315" key="git4idea.merge.GitPullDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578377789934" />
-    <state x="721" y="365" key="git4idea.ui.GitTagDialog" timestamp="1578378073134">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="721" y="365" key="git4idea.ui.GitTagDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578378073134" />
-    <state x="42" y="55" key="new project wizard" timestamp="1577954229870">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="1962" y="54" key="new project wizard/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577798520537" />
-    <state x="28" y="35" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1577347916793" />
-    <state x="42" y="55" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1577954229870" />
-    <state x="701" y="165" key="refactoring.ChangeSignatureDialog" timestamp="1578040178178">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="701" y="165" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578040178178" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup" timestamp="1578647876334">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1577628337470" />
-    <state x="415" y="147" width="672" height="444" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1578647876334" />
-    <state x="623" y="227" width="1008" height="686" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578638186308" />
+    <state x="2171" y="293" width="1251" height="606" key="new project wizard/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589700440245" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -478,6 +394,14 @@
           <url>file://$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ExceptionAdviceController.java</url>
           <line>103</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/MiaoshaServiceApplication.java</url>
+          <line>10</line>
+          <properties class="com.farmer.miaosha.MiaoshaServiceApplication" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

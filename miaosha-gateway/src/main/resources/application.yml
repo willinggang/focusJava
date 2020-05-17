@@ -1,8 +1,25 @@
 server:
-  port: 8820
-  servlet:
-    context-path: /credit-auth
+  port: 8081
 spring:
   application:
-    name: miaosha-gateway
+    name: api-gateway-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.105:8848
+        namespace: 764df422-f28d-408f-aef4-4d51b784fa42
+        group: mm
 
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          lower-case-service-id: true
+      routes:
+        - id: miaosha-service
+          uri: lb://miaosha-service
+          predicates:
+            - Path=/item/**
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
