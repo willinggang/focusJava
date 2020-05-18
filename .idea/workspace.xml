@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ConfigRefreshController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/miaosha-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/ProductServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/test/java/com/farmer/product/ProductServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/config/FastJsonRedisSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/config/RedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/controller/ConfigRefreshController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/MiaoshaGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/MiaoshaGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/component/RestAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/component/RestAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/component/RestfulAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/component/RestfulAccessDeniedHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/java/com/farmer/miaoshagateway/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/MiaoshaServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/MiaoshaServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/ProductServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,14 +88,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/product-service/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/config" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProject\focusJava\product-service\src\main\java\com\farmer\product\config" />
+      <recent name="E:\IdeaProject\focusJava\product-service\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.farmer.product.controller" />
       <recent name="com.farmer.jwt.utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -99,7 +108,7 @@
       <recent name="E:\IdeaProject\FocusingJava\miaosha-service\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MiaoshaGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
     <configuration name="MiaoshaGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="miaosha-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.farmer.miaoshagateway.MiaoshaGatewayApplication" />
@@ -150,7 +159,7 @@
       <workItem from="1581383945650" duration="1214000" />
       <workItem from="1581397913440" duration="639000" />
       <workItem from="1581595255824" duration="10000" />
-      <workItem from="1589610525244" duration="22092000" />
+      <workItem from="1589610525244" duration="25743000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -292,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578648716878</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="添加spring-cloud-alibaba">
+      <created>1589700939474</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1589700939474</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +319,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -329,49 +357,66 @@
     <MESSAGE value="修改远程仓库" />
     <MESSAGE value="Merge branch 'master' of https://github.com/willinggang/focusJava&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;README.md" />
     <MESSAGE value="调整nacos实现服务的注册于发现" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整nacos实现服务的注册于发现" />
+    <MESSAGE value="添加spring-cloud-alibaba" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加spring-cloud-alibaba" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589628560088">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589628560088" />
-    <state width="1921" height="522" key="GridCell.Tab.0.bottom" timestamp="1589685625066">
+    <state x="2460" y="88" key="CommitChangelistDialog2" timestamp="1589700938353">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="522" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
-    <state width="1921" height="522" key="GridCell.Tab.0.center" timestamp="1589685625066">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="2460" y="88" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589700938353" />
+    <state width="1915" height="188" key="GridCell.Tab.0.bottom" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="522" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
-    <state width="1921" height="522" key="GridCell.Tab.0.left" timestamp="1589685625065">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1921" height="623" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1915" height="188" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1915" height="188" key="GridCell.Tab.0.center" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="522" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625065" />
-    <state width="1921" height="522" key="GridCell.Tab.0.right" timestamp="1589685625066">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1921" height="623" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1915" height="188" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1915" height="188" key="GridCell.Tab.0.left" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="522" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
-    <state width="1921" height="522" key="GridCell.Tab.1.bottom" timestamp="1589685625066">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1921" height="623" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1915" height="188" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1915" height="188" key="GridCell.Tab.0.right" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="522" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
-    <state width="1921" height="522" key="GridCell.Tab.1.center" timestamp="1589685625066">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1921" height="623" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1915" height="188" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1915" height="188" key="GridCell.Tab.1.bottom" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="522" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
-    <state width="1921" height="522" key="GridCell.Tab.1.left" timestamp="1589685625066">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1921" height="623" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570633" />
+    <state width="1915" height="188" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1915" height="188" key="GridCell.Tab.1.center" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="522" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
-    <state width="1921" height="522" key="GridCell.Tab.1.right" timestamp="1589685625066">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1921" height="623" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1915" height="188" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1915" height="188" key="GridCell.Tab.1.left" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="522" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589685625066" />
+    <state width="1921" height="623" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1915" height="188" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1915" height="188" key="GridCell.Tab.1.right" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="623" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1915" height="188" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
     <state x="242" y="0" key="SettingsEditor" timestamp="1581383961973">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="242" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581383961973" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589700945643">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589700945643" />
     <state x="2171" y="293" width="1251" height="606" key="new project wizard" timestamp="1589700440245">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
