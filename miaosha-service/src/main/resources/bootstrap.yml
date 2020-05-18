@@ -1,0 +1,11 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: miaosha-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.1.105:8848
+        group: mm
+        file-extension: yml

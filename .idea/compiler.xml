@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="product-service" />
         <module name="miaosha-service" />
         <module name="common-jwt" />
         <module name="miaosha-common" />
@@ -20,6 +21,7 @@
       <module name="miaosha-common" options="-parameters" />
       <module name="miaosha-gateway" options="-parameters" />
       <module name="miaosha-service" options="-parameters" />
+      <module name="product-service" options="-parameters" />
     </option>
   </component>
 </project>
