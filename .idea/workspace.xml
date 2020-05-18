@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
+    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="改程序">
+      <change afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/utils/BeanUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="product-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.farmer.product.ProductServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpringGeneralSettings">
     <option name="showMultipleContextsPanel" value="false" />
@@ -116,6 +150,7 @@
       <workItem from="1578711006152" duration="624000" />
       <workItem from="1578721122514" duration="2071000" />
       <workItem from="1588907356924" duration="559000" />
+      <workItem from="1589767888079" duration="5207000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -271,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578648857185</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="改程序">
+      <created>1589767934310</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1589767934310</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +324,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -310,21 +364,34 @@
     <MESSAGE value="创建订单基本业务逻辑" />
     <MESSAGE value="添加注册中心" />
     <MESSAGE value="合并代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="合并代码" />
+    <MESSAGE value="改程序" />
+    <option name="LAST_COMMIT_MESSAGE" value="改程序" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1179" y="289" width="710" height="894" key="#Vim_Emulation" timestamp="1588907529291">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1179" y="289" width="710" height="894" key="#Vim_Emulation/0.0.2560.1410@0.0.2560.1410" timestamp="1588907529291" />
-    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup" timestamp="1588907714867">
+    <state x="1165" y="570" key="MultipleFileMergeDialog" timestamp="1589768009066">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1165" y="570" key="MultipleFileMergeDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1589768009066" />
+    <state x="1073" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589767939979">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1073" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410@0.0.2560.1410" timestamp="1589767939979" />
+    <state x="940" y="491" key="git4idea.merge.GitPullDialog" timestamp="1589767999249">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="940" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1589767999249" />
+    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup" timestamp="1589770518104">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="608" y="0" width="1344" height="1406" key="search.everywhere.popup.inPresentationMode" timestamp="1588907889673">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="608" y="0" width="1344" height="1406" key="search.everywhere.popup.inPresentationMode/0.0.2560.1410@0.0.2560.1410" timestamp="1588907889673" />
-    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup/0.0.2560.1410@0.0.2560.1410" timestamp="1588907714867" />
+    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup/0.0.2560.1410@0.0.2560.1410" timestamp="1589770518104" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
