@@ -27,13 +27,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/config/FastJsonRedisSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/config/RedisConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/controller/ConfigRefreshController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/DO/ItemDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/DO/ItemStockDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/DO/PromoDO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/dao/ItemDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/dao/ItemStockDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/dao/PromoDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/model/ItemModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/vo/ItemVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ItemDOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ItemStockDOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/PromoDOMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/utils/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/utils/BeanUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/generatorConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,23 +101,24 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/config" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IdeaProject\focusJava\product-service\src\main\java\com\farmer\product\config" />
-      <recent name="E:\IdeaProject\focusJava\product-service\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.farmer.product.controller" />
-      <recent name="com.farmer.jwt.utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IdeaProject\FocusingJava\miaosha-service\src\main\java\com\farmer\miaosha\config" />
       <recent name="E:\IdeaProject\FocusingJava\miaosha-service\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.farmer.product.service.model" />
+      <recent name="com.farmer.product.controller" />
+      <recent name="com.farmer.jwt.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProject\focusJava\product-service\src\main\java\com\farmer\product\config" />
+      <recent name="E:\IdeaProject\focusJava\product-service\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
@@ -160,6 +173,8 @@
       <workItem from="1581397913440" duration="639000" />
       <workItem from="1581595255824" duration="10000" />
       <workItem from="1589610525244" duration="25743000" />
+      <workItem from="1589805237696" duration="323000" />
+      <workItem from="1589805577673" duration="2390000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -308,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589700939474</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="配置商品服务">
+      <created>1589805280132</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1589805280132</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,36 +380,41 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/willinggang/focusJava&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;README.md" />
     <MESSAGE value="调整nacos实现服务的注册于发现" />
     <MESSAGE value="添加spring-cloud-alibaba" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加spring-cloud-alibaba" />
+    <MESSAGE value="配置商品服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置商品服务" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589628560088">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589628560088" />
-    <state x="2460" y="88" key="CommitChangelistDialog2" timestamp="1589700938353">
+    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1589807295157">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2460" y="88" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589700938353" />
-    <state width="1915" height="188" key="GridCell.Tab.0.bottom" timestamp="1589804361175">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589807295157" />
+    <state x="2460" y="88" key="CommitChangelistDialog2" timestamp="1589805277438">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="623" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state x="2460" y="88" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589805277438" />
+    <state width="1921" height="53" key="GridCell.Tab.0.bottom" timestamp="1589806977073">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="53" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589806977073" />
     <state width="1915" height="188" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
-    <state width="1915" height="188" key="GridCell.Tab.0.center" timestamp="1589804361175">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1921" height="53" key="GridCell.Tab.0.center" timestamp="1589806977073">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="623" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1921" height="53" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589806977073" />
     <state width="1915" height="188" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
-    <state width="1915" height="188" key="GridCell.Tab.0.left" timestamp="1589804361175">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1921" height="53" key="GridCell.Tab.0.left" timestamp="1589806977073">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="623" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1921" height="53" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589806977073" />
     <state width="1915" height="188" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
-    <state width="1915" height="188" key="GridCell.Tab.0.right" timestamp="1589804361175">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1921" height="53" key="GridCell.Tab.0.right" timestamp="1589806977073">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="623" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1921" height="53" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589806977073" />
     <state width="1915" height="188" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
     <state width="1915" height="188" key="GridCell.Tab.1.bottom" timestamp="1589804361175">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -409,14 +436,23 @@
     </state>
     <state width="1921" height="623" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
     <state width="1915" height="188" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
-    <state x="242" y="0" key="SettingsEditor" timestamp="1581383961973">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2765" y="386" width="425" height="267" key="MultipleFileMergeDialog" timestamp="1589805294370">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2765" y="386" width="425" height="267" key="MultipleFileMergeDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589805294370" />
+    <state x="2283" y="0" key="SettingsEditor" timestamp="1589807560487">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="242" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581383961973" />
+    <state x="2283" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589807560486" />
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589700945643">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589700945643" />
+    <state x="2673" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589805283641">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2673" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589805283641" />
     <state x="2171" y="293" width="1251" height="606" key="new project wizard" timestamp="1589700440245">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
