@@ -11,7 +11,7 @@ import com.farmer.product.dao.ItemStockDOMapper;
 import com.farmer.product.dao.PromoDOMapper;
 import com.farmer.product.service.ItemService;
 import com.farmer.product.service.model.ItemModel;
-import com.farmer.product.vo.ItemVo;
+import com.farmer.product.vo.ItemShowDetailVo;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.stereotype.Service;
@@ -40,7 +40,7 @@ public class ItemServiceImpl implements ItemService {
     private PromoDOMapper promoDOMapper;
 
     @Override
-    public ItemVo getItem(Integer itemId) {
+    public ItemShowDetailVo getItem(Integer itemId) {
         ItemDO itemDO = itemDOMapper.selectByItemId(itemId);
         if (itemDO == null) {
             throw new CustomException(ItemErrorConstants.ITEM_NOT_EXITS_ERROR_CODE, ItemErrorConstants.ITEM_NOT_EXITS_ERROR_MSG);
@@ -61,19 +61,21 @@ public class ItemServiceImpl implements ItemService {
             itemModel.setStartDate(promoDO.getStartDate());
             itemModel.setEndDate(promoDO.getEndDate());
         }
-        return BeanUtils.copy(itemModel,ItemVo.class);
+        return BeanUtils.copy(itemModel, ItemShowDetailVo.class);
     }
 
     @Override
-    public List<ItemVo> getAllItems() {
+    public List<ItemShowDetailVo> getAllItems() {
         List<ItemDO> itemDOS = itemDOMapper.selectAllItems();
-        List<ItemVo> itemVOList = new ArrayList<>();
+        List<ItemShowDetailVo> itemVOList = new ArrayList<>();
         if (!CollectionUtils.isEmpty(itemDOS)) {
             itemDOS.forEach(itemDO -> {
-                ItemVo vo = new ItemVo();
-                itemVOList.add(BeanUtils.copy(itemDO,ItemVo.class));
+                ItemShowDetailVo vo = new ItemShowDetailVo();
+                itemVOList.add(BeanUtils.copy(itemDO, ItemShowDetailVo.class));
             });
         }
         return itemVOList;
     }
+
+
 }

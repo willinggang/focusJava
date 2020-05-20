@@ -1,8 +1,6 @@
 package com.farmer.product.service;
 
-import com.farmer.product.vo.ItemVo;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
+import com.farmer.product.vo.ItemShowDetailVo;
 
 import java.util.List;
 
@@ -20,12 +18,14 @@ public interface  ItemService {
      * @param itemId 商品ID
      * @return
      */
-    ItemVo getItem(Integer itemId);
+    ItemShowDetailVo getItem(Integer itemId);
 
     /**
      * 获取所有商品信息
      *
      * @return
      */
-    List<ItemVo> getAllItems();
+    List<ItemShowDetailVo> getAllItems();
+
+
 }

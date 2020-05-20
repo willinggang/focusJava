@@ -18,7 +18,7 @@ import java.util.Date;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ItemVo {
+public class ItemShowDetailVo {
     /**
      * 商品ID
      */

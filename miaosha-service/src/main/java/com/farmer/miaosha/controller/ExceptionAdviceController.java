@@ -29,12 +29,21 @@ import java.io.IOException;
 @RestController
 public class ExceptionAdviceController {
     /**
-     * 打印错误信息
      *
+     *自定义异常
      * @param e 异常信息
      */
-    private void logError(Exception e) {
-        log.info("异常错误信息:{}", ExceptionUtils.getStackTrace(e));
+    private void logInfoException(Exception e) {
+        log.info("{}", ExceptionUtils.getStackTrace(e));
+    }
+
+    /**
+     *
+     *自定义异常
+     * @param e 异常信息
+     */
+    private void logErrorException(Exception e) {
+        log.error("{}", ExceptionUtils.getStackTrace(e));
     }
 
     /**
@@ -44,7 +53,7 @@ public class ExceptionAdviceController {
      */
     @ExceptionHandler(ConstraintViolationException.class)
     protected CommonResponse methodArgumentNotValid(ConstraintViolationException exception) {
-        logError(exception);
+        logInfoException(exception);
         String message = exception.getMessage();
         return StringUtils.isEmpty(message)?CommonResponse.METHOD_PARAM_INVALID_ERROR:CommonResponse.METHOD_PARAM_INVALID_ERROR(message);
     }
@@ -56,7 +65,7 @@ public class ExceptionAdviceController {
      */
     @ExceptionHandler({MethodArgumentTypeMismatchException.class, HttpMessageNotReadableException.class})
     protected CommonResponse typeMissMatch(Exception exception) {
-        logError(exception);
+        logInfoException(exception);
         return CommonResponse.METHOD_PARAM_INVALID_ERROR;
     }
 
@@ -67,7 +76,7 @@ public class ExceptionAdviceController {
      */
     @ExceptionHandler(ServletRequestBindingException.class)
     protected CommonResponse requestBindingException(ServletRequestBindingException exception) {
-        logError(exception);
+        logInfoException(exception);
         return CommonResponse.SERVLET_REQUEST_BINDING_ERROR;
     }
 
@@ -78,7 +87,7 @@ public class ExceptionAdviceController {
      */
     @ExceptionHandler(MissingServletRequestParameterException.class)
     protected CommonResponse missingServletRequestParameter(MissingServletRequestParameterException exception) {
-        logError(exception);
+        logInfoException(exception);
         return CommonResponse.METHOD_PARAM_MISSING_ERROR;
     }
 
@@ -89,7 +98,7 @@ public class ExceptionAdviceController {
      */
     @ExceptionHandler(CustomException.class)
     protected CommonResponse customException(CustomException exception) {
-        logError(exception);
+        logInfoException(exception);
         return CommonResponse.fail(exception.getCode(),exception.getMessage());
     }
 
@@ -100,7 +109,7 @@ public class ExceptionAdviceController {
      */
     @ExceptionHandler({HttpClientErrorException.class, IOException.class, Exception.class})
     protected CommonResponse commonException(Exception exception) {
-        logError(exception);
+        logErrorException(exception);
         return CommonResponse.fail();
     }
 }

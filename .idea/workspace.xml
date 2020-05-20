@@ -25,7 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="" />
+    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="合并代码">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ExceptionAdviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ExceptionAdviceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/vo/ItemVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/vo/ItemShowDetailVo.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -309,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589805280132</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="合并代码">
+      <created>1589938363674</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1589938363674</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +373,8 @@
     <MESSAGE value="调整nacos实现服务的注册于发现" />
     <MESSAGE value="添加spring-cloud-alibaba" />
     <MESSAGE value="配置商品服务" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置商品服务" />
+    <MESSAGE value="合并代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="合并代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589628560088">
@@ -371,6 +385,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589807295157" />
+    <state x="593" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1589938780043">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="593" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1589938780043" />
     <state x="2460" y="88" key="CommitChangelistDialog2" timestamp="1589805277438">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
@@ -444,16 +462,6 @@
           <url>file://$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/validation/validator/MobileValidator.java</url>
           <line>25</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ExceptionAdviceController.java</url>
-          <line>102</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ExceptionAdviceController.java</url>
-          <line>103</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/MiaoshaServiceApplication.java</url>
