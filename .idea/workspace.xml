@@ -25,23 +25,26 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="删除无用代码">
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/vo/ItemAddVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="添加商品服务">
+      <change afterPath="$PROJECT_DIR$/order-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/java/com/farmer/order/order/OrderServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/src/test/java/com/farmer/order/order/OrderServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/remote/ProductRemoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/ItemErrorConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/constants/ItemErrorConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/common/CommonConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/response/CommonConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/common/CommonResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/response/CommonResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ExceptionAdviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ExceptionAdviceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/SmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/SmsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/DO/ItemStockDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/DO/ItemStockDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/dao/ItemStockDOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/dao/ItemStockDOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/impl/ItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ItemDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ItemDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ItemStockDOMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ItemStockDOMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/ProductServiceApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +57,8 @@
         <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -128,6 +131,13 @@
     <configuration name="MiaoshaServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="miaosha-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.farmer.miaosha.MiaoshaServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="order-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.farmer.order.order.OrderServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -347,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589945898511</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="添加商品服务">
+      <created>1589961010996</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1589961010996</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +418,8 @@
     <MESSAGE value="合并代码" />
     <MESSAGE value="修改异常捕获日志输出类型" />
     <MESSAGE value="删除无用代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除无用代码" />
+    <MESSAGE value="添加商品服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加商品服务" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589628560088">
@@ -479,18 +497,24 @@
     <state x="242" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581383961973" />
     <state x="2283" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589807560486" />
     <state x="484" y="0" key="SettingsEditor/0.0.2560.1410@0.0.2560.1410" timestamp="1589958444137" />
-    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589700945643">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="736" y="343" key="Vcs.Push.Dialog.v2" timestamp="1589961019809">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589700945643" />
+    <state x="736" y="343" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1589961019809" />
+    <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1589965255590">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1589965255590" />
     <state x="2673" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589805283641">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2673" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589805283641" />
-    <state x="2171" y="293" width="1251" height="606" key="new project wizard" timestamp="1589700440245">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="335" y="397" width="1251" height="606" key="new project wizard" timestamp="1589964828467">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="2171" y="293" width="1251" height="606" key="new project wizard/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589700440245" />
+    <state x="335" y="397" key="new project wizard/0.0.2560.1410@0.0.2560.1410" timestamp="1589964828467" />
     <state x="936" y="347" width="672" height="676" key="search.everywhere.popup" timestamp="1589959851340">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>

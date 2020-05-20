@@ -1,8 +1,8 @@
 server:
-  port: 8802
+  port: 8083
 spring:
   application:
-    name: product-service
+    name: order-service
   redis:
     host: 192.168.1.105
     database: 10
@@ -48,4 +48,4 @@ mybatis:
   type-aliases-package: com.farmer.miaosha.dao
 logging:
   level:
-    com.farmer.product.dao: debug
+    com.farmer.order.dao: debug

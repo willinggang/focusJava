@@ -9,11 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="product-service" />
         <module name="miaosha-service" />
+        <module name="miaosha-gateway" />
+        <module name="order-service" />
         <module name="common-jwt" />
         <module name="miaosha-common" />
-        <module name="miaosha-gateway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="product-service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -21,6 +25,7 @@
       <module name="miaosha-common" options="-parameters" />
       <module name="miaosha-gateway" options="-parameters" />
       <module name="miaosha-service" options="-parameters" />
+      <module name="order-service" options="-parameters" />
       <module name="product-service" options="-parameters" />
     </option>
   </component>
