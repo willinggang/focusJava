@@ -14,4 +14,7 @@ public interface ItemErrorConstants extends BaseErrorConstants {
     Integer ITEM_STOCK_NO_ENOUGH_ERROR_CODE = ITEM_ERROR_BASE_CODE - 2;
     String ITEM_STOCK_NO_ENOUGH_ERROR_MSG = "商品库存不足";
 
+    Integer ITEM_ADD_ERROR_CODE = ITEM_ERROR_BASE_CODE - 3;
+    String ITEM_ADD_ERROR_MSG = "商品添加失败";
+
 }

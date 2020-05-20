@@ -1,7 +1,5 @@
-package com.farmer.miaosha.common;
+package com.farmer.common.response;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
 
 /**
  * 请求响应类
@@ -9,8 +7,7 @@ import lombok.Data;
  * @author Administrator
  * @date 2019年 12月28日 19:50:28
  */
-@Data
-@AllArgsConstructor
+
 public class CommonResponse<T> {
     /**
      * 响应吗
@@ -30,6 +27,12 @@ public class CommonResponse<T> {
     public CommonResponse(Integer code, String msg) {
         this.code = code;
         this.msg = msg;
+    }
+
+    public CommonResponse(Integer code, String msg, T data) {
+        this.code = code;
+        this.msg = msg;
+        this.data = data;
     }
 
     /**

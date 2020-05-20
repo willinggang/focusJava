@@ -22,11 +22,11 @@
     delete from item
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.farmer.product.DO.ItemDO">
-    insert into item (id, title, price,
+  <insert id="insert" parameterType="com.farmer.product.DO.ItemDO" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+    insert into item (title, price,
       description, sales, img_url
       )
-    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{price,jdbcType=DOUBLE},
+    values (#{title,jdbcType=VARCHAR}, #{price,jdbcType=DOUBLE},
       #{description,jdbcType=VARCHAR}, #{sales,jdbcType=INTEGER}, #{imgUrl,jdbcType=VARCHAR}
       )
   </insert>

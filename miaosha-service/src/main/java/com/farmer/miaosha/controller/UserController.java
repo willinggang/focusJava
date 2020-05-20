@@ -2,7 +2,7 @@ package com.farmer.miaosha.controller;
 
 import com.farmer.miaosha.VO.RegisterUserInfoVO;
 import com.farmer.miaosha.VO.UserInfoVO;
-import com.farmer.miaosha.common.CommonResponse;
+import com.farmer.common.response.CommonResponse;
 import com.farmer.miaosha.service.UserService;
 import com.farmer.miaosha.validation.MobileValidation;
 import io.swagger.annotations.Api;
@@ -11,7 +11,6 @@ import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.hibernate.validator.constraints.Length;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 

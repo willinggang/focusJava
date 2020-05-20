@@ -1,7 +1,7 @@
 package com.farmer.miaosha.controller;
 
 import com.farmer.common.exception.MobileCodeEnum;
-import com.farmer.miaosha.common.CommonResponse;
+import com.farmer.common.response.CommonResponse;
 import com.farmer.miaosha.service.SmsService;
 import com.farmer.miaosha.validation.MobileValidation;
 import io.swagger.annotations.Api;

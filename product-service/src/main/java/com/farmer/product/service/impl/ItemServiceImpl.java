@@ -2,15 +2,18 @@ package com.farmer.product.service.impl;
 
 import com.farmer.common.constants.ItemErrorConstants;
 import com.farmer.common.exception.CustomException;
+import com.farmer.common.response.CommonResponse;
 import com.farmer.common.utils.BeanUtils;
 import com.farmer.product.DO.ItemDO;
 import com.farmer.product.DO.ItemStockDO;
 import com.farmer.product.DO.PromoDO;
+import com.farmer.product.config.ItemConstants;
 import com.farmer.product.dao.ItemDOMapper;
 import com.farmer.product.dao.ItemStockDOMapper;
 import com.farmer.product.dao.PromoDOMapper;
 import com.farmer.product.service.ItemService;
 import com.farmer.product.service.model.ItemModel;
+import com.farmer.product.vo.ItemAddVo;
 import com.farmer.product.vo.ItemShowDetailVo;
 import lombok.extern.slf4j.Slf4j;
 
@@ -79,15 +82,39 @@ public class ItemServiceImpl implements ItemService {
 
     @Override
     public Integer decreaseItemStock(Integer itemId, Integer num) {
-        ItemDO itemDO = itemDOMapper.selectByItemId(itemId);
-        if (itemDO == null) {
-            throw new CustomException(ItemErrorConstants.ITEM_NOT_EXITS_ERROR_CODE, ItemErrorConstants.ITEM_NOT_EXITS_ERROR_MSG);
-        }
         ItemStockDO itemStockDO = itemStockDOMapper.selectByItemId(itemId);
-        if (itemStockDO == null) {
-
+        if (itemStockDO != null && itemStockDO.getStock() >= num) {
+            int ret = itemStockDOMapper.decreaseStockByItemId(itemId, num);
+            if (ret > 0) {
+                return ItemConstants.ITEM_STOCK_DECREASE_SUCCESS;
+            }
+        } else if (itemStockDO != null && itemStockDO.getStock() < num) {
+            throw new CustomException(ItemErrorConstants.ITEM_STOCK_NO_ENOUGH_ERROR_CODE, ItemErrorConstants.ITEM_STOCK_NO_ENOUGH_ERROR_MSG);
         }
-        return null;
+        return ItemConstants.ITEM_STOCK_DECREASE_FAILED;
+    }
+
+    @Override
+    public CommonResponse addItem(ItemAddVo vo) {
+        ItemDO itemDO = BeanUtils.copy(vo, ItemDO.class);
+        if (itemDO == null) {
+            throw new CustomException(ItemErrorConstants.ITEM_ADD_ERROR_CODE, ItemErrorConstants.ITEM_ADD_ERROR_MSG);
+        }
+        /*添加商品信息*/
+        itemDOMapper.insert(itemDO);
+        if (itemDO.getId() == null || itemDO.getId() <= 0) {
+            throw new CustomException(ItemErrorConstants.ITEM_ADD_ERROR_CODE, ItemErrorConstants.ITEM_ADD_ERROR_MSG);
+        }
+        ItemStockDO itemStockDO = ItemStockDO.builder()
+                .itemId(itemDO.getId())
+                .stock(vo.getStock())
+                .build();
+        /*添加商品库存*/
+        itemStockDOMapper.addItemStock(itemStockDO);
+        if (itemStockDO.getId() > 0) {
+            return CommonResponse.success();
+        }
+        return CommonResponse.fail();
     }
 
 

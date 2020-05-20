@@ -1,5 +1,14 @@
 package com.farmer.product.DO;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ItemStockDO {
     private Integer id;
 

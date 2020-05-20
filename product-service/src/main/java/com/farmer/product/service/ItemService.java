@@ -1,5 +1,7 @@
 package com.farmer.product.service;
 
+import com.farmer.common.response.CommonResponse;
+import com.farmer.product.vo.ItemAddVo;
 import com.farmer.product.vo.ItemShowDetailVo;
 
 import java.util.List;
@@ -31,8 +33,15 @@ public interface ItemService {
      * 减商品库存
      *
      * @param itemId 商品id
-     * @param num 产品数量
+     * @param num    产品数量
      * @return -1-库存不足,0-失败，1-成功
      */
-    Integer decreaseItemStock(Integer itemId,Integer num);
+    Integer decreaseItemStock(Integer itemId, Integer num);
+
+    /**
+     * 添加商品
+     *
+     * @param vo 商品详情
+     */
+    CommonResponse addItem(ItemAddVo vo);
 }

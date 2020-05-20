@@ -1,4 +1,4 @@
-package com.farmer.miaosha.common;
+package com.farmer.common.response;
 
 /**
  * 请求返回常量

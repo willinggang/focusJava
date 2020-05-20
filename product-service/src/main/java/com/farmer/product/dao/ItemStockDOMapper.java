@@ -4,6 +4,7 @@ import com.farmer.product.DO.ItemStockDO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+
 @Mapper
 @Repository
 public interface ItemStockDOMapper {
@@ -23,5 +24,11 @@ public interface ItemStockDOMapper {
      * @return
      */
     int decreaseStockByItemId(@Param("itemId") Integer itemId, @Param("amount") Integer amount);
+
+    /**
+     * 添加商品库存
+     * @param stockDO 库存数据
+     */
+    int addItemStock(ItemStockDO stockDO);
 
 }

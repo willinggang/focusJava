@@ -20,4 +20,8 @@
     set stock = stock - #{amount}
     where item_id = #{itemId,jdbcType=INTEGER}
   </update>
+  <insert id="addItemStock" parameterType="com.farmer.product.DO.ItemStockDO" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+    insert into item_stock(item_id,stock) values(#{itemId},#{stock})
+  </insert>
+
 </mapper>

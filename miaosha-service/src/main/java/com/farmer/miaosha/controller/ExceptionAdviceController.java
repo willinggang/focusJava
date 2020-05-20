@@ -1,7 +1,7 @@
 package com.farmer.miaosha.controller;
 
 import com.farmer.common.exception.CustomException;
-import com.farmer.miaosha.common.CommonResponse;
+import com.farmer.common.response.CommonResponse;
 import lombok.extern.slf4j.Slf4j;
 
 import org.apache.commons.lang3.StringUtils;
