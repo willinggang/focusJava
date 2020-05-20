@@ -3,8 +3,6 @@ package com.farmer.miaosha.service.impl;
 import com.farmer.common.constants.ItemErrorConstants;
 import com.farmer.common.constants.OrderErrorConstants;
 import com.farmer.common.exception.CustomException;
-import com.farmer.miaosha.DO.ItemDO;
-import com.farmer.miaosha.DO.ItemStockDO;
 import com.farmer.miaosha.DO.PromoDO;
 import com.farmer.miaosha.DO.SequenceInfoDO;
 import com.farmer.miaosha.VO.OrderVO;
@@ -17,7 +15,6 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.lang.annotation.Annotation;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;

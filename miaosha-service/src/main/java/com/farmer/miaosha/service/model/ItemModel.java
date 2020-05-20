@@ -1,9 +1,5 @@
 package com.farmer.miaosha.service.model;
 
-import ch.qos.logback.core.joran.util.beans.BeanUtil;
-import com.farmer.miaosha.DO.ItemDO;
-import com.farmer.miaosha.VO.ItemVO;
-import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

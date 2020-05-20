@@ -11,7 +11,7 @@ import java.util.List;
  * @create: 2020-05-18 20:40
  */
 
-public interface  ItemService {
+public interface ItemService {
     /**
      * 根据商品id获取商品详情
      *
@@ -27,5 +27,12 @@ public interface  ItemService {
      */
     List<ItemShowDetailVo> getAllItems();
 
-
+    /**
+     * 减商品库存
+     *
+     * @param itemId 商品id
+     * @param num 产品数量
+     * @return -1-库存不足,0-失败，1-成功
+     */
+    Integer decreaseItemStock(Integer itemId,Integer num);
 }

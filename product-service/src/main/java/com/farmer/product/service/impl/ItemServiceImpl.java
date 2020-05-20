@@ -45,7 +45,7 @@ public class ItemServiceImpl implements ItemService {
         if (itemDO == null) {
             throw new CustomException(ItemErrorConstants.ITEM_NOT_EXITS_ERROR_CODE, ItemErrorConstants.ITEM_NOT_EXITS_ERROR_MSG);
         }
-        ItemModel itemModel= BeanUtils.copy(itemDO,ItemModel.class);
+        ItemModel itemModel = BeanUtils.copy(itemDO, ItemModel.class);
         /*获取库存信息*/
         ItemStockDO itemStockDO = itemStockDOMapper.selectByItemId(itemId);
         if (itemStockDO == null || itemStockDO.getStock() <= 0) {
@@ -75,6 +75,19 @@ public class ItemServiceImpl implements ItemService {
             });
         }
         return itemVOList;
+    }
+
+    @Override
+    public Integer decreaseItemStock(Integer itemId, Integer num) {
+        ItemDO itemDO = itemDOMapper.selectByItemId(itemId);
+        if (itemDO == null) {
+            throw new CustomException(ItemErrorConstants.ITEM_NOT_EXITS_ERROR_CODE, ItemErrorConstants.ITEM_NOT_EXITS_ERROR_MSG);
+        }
+        ItemStockDO itemStockDO = itemStockDOMapper.selectByItemId(itemId);
+        if (itemStockDO == null) {
+
+        }
+        return null;
     }
 
 
