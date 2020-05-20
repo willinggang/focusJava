@@ -25,11 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="改程序">
-      <change afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/utils/BeanUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="添加BeanUtils">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +147,7 @@
       <workItem from="1578711006152" duration="624000" />
       <workItem from="1578721122514" duration="2071000" />
       <workItem from="1588907356924" duration="559000" />
-      <workItem from="1589767888079" duration="5207000" />
+      <workItem from="1589767888079" duration="8287000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -313,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589767934310</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="添加BeanUtils">
+      <created>1589773552511</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1589773552511</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +369,8 @@
     <MESSAGE value="添加注册中心" />
     <MESSAGE value="合并代码" />
     <MESSAGE value="改程序" />
-    <option name="LAST_COMMIT_MESSAGE" value="改程序" />
+    <MESSAGE value="添加BeanUtils" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加BeanUtils" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1179" y="289" width="710" height="894" key="#Vim_Emulation" timestamp="1588907529291">
@@ -376,6 +381,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1165" y="570" key="MultipleFileMergeDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1589768009066" />
+    <state x="872" y="437" key="Vcs.Push.Dialog.v2" timestamp="1589773634327">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="872" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1589773634327" />
     <state x="1073" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589767939979">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
