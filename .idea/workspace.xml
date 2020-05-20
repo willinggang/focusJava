@@ -25,8 +25,26 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="添加BeanUtils">
+    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/DO/ItemDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/DO/ItemStockDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/DO/PromoDO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/dao/ItemDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/dao/ItemStockDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/dao/PromoDOMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/impl/ItemServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/model/ItemModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/vo/ItemVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ItemDOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ItemStockDOMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/PromoDOMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/utils/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/utils/BeanUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/generatorConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +69,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\5_MavenRepository" />
-        <option name="userSettingsFile" value="D:\10_apache-maven-3.6.0\conf\settings.xml" />
+        <option name="localRepository" value="E:\maven\repo" />
+        <option name="userSettingsFile" value="D:\Program Files\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -80,24 +98,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="F:/work/dev/mid-autumn" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/config" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="spring" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.farmer.jwt.utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\IdeaProject\FocusingJava\miaosha-service\src\main\java\com\farmer\miaosha\config" />
       <recent name="E:\IdeaProject\FocusingJava\miaosha-service\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.farmer.product.service.model" />
+      <recent name="com.farmer.product.controller" />
+      <recent name="com.farmer.jwt.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProject\focusJava\product-service\src\main\java\com\farmer\product\config" />
+      <recent name="E:\IdeaProject\focusJava\product-service\src\main\resources" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MiaoshaServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
     <configuration name="MiaoshaGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="miaosha-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.farmer.miaoshagateway.MiaoshaGatewayApplication" />
@@ -143,11 +166,14 @@
       <workItem from="1578038421836" duration="6030000" />
       <workItem from="1578275210229" duration="6823000" />
       <workItem from="1578290892229" duration="30807000" />
-      <workItem from="1578624648180" duration="14521000" />
-      <workItem from="1578711006152" duration="624000" />
-      <workItem from="1578721122514" duration="2071000" />
-      <workItem from="1588907356924" duration="559000" />
-      <workItem from="1589767888079" duration="8287000" />
+      <workItem from="1578624648180" duration="6370000" />
+      <workItem from="1578640157549" duration="3733000" />
+      <workItem from="1581383945650" duration="1214000" />
+      <workItem from="1581397913440" duration="639000" />
+      <workItem from="1581595255824" duration="10000" />
+      <workItem from="1589610525244" duration="25743000" />
+      <workItem from="1589805237696" duration="323000" />
+      <workItem from="1589805577673" duration="2390000" />
     </task>
     <task id="LOCAL-00001" summary="将token的生成与校验提出">
       <created>1577936571114</created>
@@ -282,42 +308,28 @@
       <option name="project" value="LOCAL" />
       <updated>1578626135688</updated>
     </task>
-    <task id="LOCAL-00020" summary="创建订单基本业务逻辑">
-      <created>1578638238627</created>
+    <task id="LOCAL-00020" summary="调整nacos实现服务的注册于发现">
+      <created>1578648716878</created>
       <option name="number" value="00020" />
       <option name="presentableId" value="LOCAL-00020" />
       <option name="project" value="LOCAL" />
-      <updated>1578638238627</updated>
+      <updated>1578648716878</updated>
     </task>
-    <task id="LOCAL-00021" summary="添加注册中心">
-      <created>1578647311886</created>
+    <task id="LOCAL-00021" summary="添加spring-cloud-alibaba">
+      <created>1589700939474</created>
       <option name="number" value="00021" />
       <option name="presentableId" value="LOCAL-00021" />
       <option name="project" value="LOCAL" />
-      <updated>1578647311886</updated>
+      <updated>1589700939474</updated>
     </task>
-    <task id="LOCAL-00022" summary="合并代码">
-      <created>1578648857185</created>
+    <task id="LOCAL-00022" summary="配置商品服务">
+      <created>1589805280132</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1578648857185</updated>
+      <updated>1589805280132</updated>
     </task>
-    <task id="LOCAL-00023" summary="改程序">
-      <created>1589767934310</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1589767934310</updated>
-    </task>
-    <task id="LOCAL-00024" summary="添加BeanUtils">
-      <created>1589773552511</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1589773552511</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +346,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -365,42 +377,85 @@
     <MESSAGE value="添加部分订单逻辑内容" />
     <MESSAGE value="修改远程仓库" />
     <MESSAGE value="Merge branch 'master' of https://github.com/willinggang/focusJava&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;README.md" />
-    <MESSAGE value="创建订单基本业务逻辑" />
-    <MESSAGE value="添加注册中心" />
-    <MESSAGE value="合并代码" />
-    <MESSAGE value="改程序" />
-    <MESSAGE value="添加BeanUtils" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加BeanUtils" />
+    <MESSAGE value="调整nacos实现服务的注册于发现" />
+    <MESSAGE value="添加spring-cloud-alibaba" />
+    <MESSAGE value="配置商品服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置商品服务" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1179" y="289" width="710" height="894" key="#Vim_Emulation" timestamp="1588907529291">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589628560088">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="1179" y="289" width="710" height="894" key="#Vim_Emulation/0.0.2560.1410@0.0.2560.1410" timestamp="1588907529291" />
-    <state x="1165" y="570" key="MultipleFileMergeDialog" timestamp="1589768009066">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state x="2334" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589628560088" />
+    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1589807295157">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="1165" y="570" key="MultipleFileMergeDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1589768009066" />
-    <state x="872" y="437" key="Vcs.Push.Dialog.v2" timestamp="1589773634327">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589807295157" />
+    <state x="2460" y="88" key="CommitChangelistDialog2" timestamp="1589805277438">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="872" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1410@0.0.2560.1410" timestamp="1589773634327" />
-    <state x="1073" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589767939979">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state x="2460" y="88" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589805277438" />
+    <state width="1921" height="53" key="GridCell.Tab.0.bottom" timestamp="1589806977073">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="1073" y="617" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410@0.0.2560.1410" timestamp="1589767939979" />
-    <state x="940" y="491" key="git4idea.merge.GitPullDialog" timestamp="1589767999249">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state width="1921" height="53" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589806977073" />
+    <state width="1915" height="188" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1921" height="53" key="GridCell.Tab.0.center" timestamp="1589806977073">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="940" y="491" key="git4idea.merge.GitPullDialog/0.0.2560.1410@0.0.2560.1410" timestamp="1589767999249" />
-    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup" timestamp="1589770518104">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state width="1921" height="53" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589806977073" />
+    <state width="1915" height="188" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1921" height="53" key="GridCell.Tab.0.left" timestamp="1589806977073">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="608" y="0" width="1344" height="1406" key="search.everywhere.popup.inPresentationMode" timestamp="1588907889673">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state width="1921" height="53" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589806977073" />
+    <state width="1915" height="188" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1921" height="53" key="GridCell.Tab.0.right" timestamp="1589806977073">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="608" y="0" width="1344" height="1406" key="search.everywhere.popup.inPresentationMode/0.0.2560.1410@0.0.2560.1410" timestamp="1588907889673" />
-    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup/0.0.2560.1410@0.0.2560.1410" timestamp="1589770518104" />
+    <state width="1921" height="53" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589806977073" />
+    <state width="1915" height="188" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1915" height="188" key="GridCell.Tab.1.bottom" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="623" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570633" />
+    <state width="1915" height="188" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1915" height="188" key="GridCell.Tab.1.center" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="623" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1915" height="188" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1915" height="188" key="GridCell.Tab.1.left" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="623" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1915" height="188" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state width="1915" height="188" key="GridCell.Tab.1.right" timestamp="1589804361175">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="623" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589703570632" />
+    <state width="1915" height="188" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589804361175" />
+    <state x="2765" y="386" width="425" height="267" key="MultipleFileMergeDialog" timestamp="1589805294370">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2765" y="386" width="425" height="267" key="MultipleFileMergeDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589805294370" />
+    <state x="2283" y="0" key="SettingsEditor" timestamp="1589807560487">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="242" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581383961973" />
+    <state x="2283" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589807560486" />
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2" timestamp="1589700945643">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="253" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589700945643" />
+    <state x="2673" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589805283641">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2673" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589805283641" />
+    <state x="2171" y="293" width="1251" height="606" key="new project wizard" timestamp="1589700440245">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2171" y="293" width="1251" height="606" key="new project wizard/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589700440245" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -419,6 +474,14 @@
           <url>file://$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/controller/ExceptionAdviceController.java</url>
           <line>103</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/miaosha-service/src/main/java/com/farmer/miaosha/MiaoshaServiceApplication.java</url>
+          <line>10</line>
+          <properties class="com.farmer.miaosha.MiaoshaServiceApplication" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -17,7 +17,7 @@ public class BeanUtils {
         dozer.map(sourceObj, targetObj);
     }
 
-    public <T> T copy(Object source, Class<T> targetClass) throws MappingException {
+    public static  <T> T copy(Object source, Class<T> targetClass) throws MappingException {
         return dozer.map(source, targetClass);
     }
 }
