@@ -25,27 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/DO/ItemDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/DO/ItemStockDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/DO/PromoDO" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/controller/ItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/dao/ItemDOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/dao/ItemStockDOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/dao/PromoDOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/ItemService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/impl/ItemServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/service/model/ItemModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/farmer/product/vo/ItemVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ItemDOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/ItemStockDOMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/resources/mapper/PromoDOMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/utils/BeanUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha-common/src/main/java/com/farmer/common/utils/BeanUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/bootstrap.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/generatorConfig.xml" afterDir="false" />
-    </list>
+    <list default="true" id="04f94cef-cb1b-480c-89b6-58c43768b910" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
